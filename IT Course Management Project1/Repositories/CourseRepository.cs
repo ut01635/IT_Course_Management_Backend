@@ -4,9 +4,6 @@
     {
         private readonly string _connectionstring;
 
-        public CourseRepository(string connectionstring)
-        {
-            _connectionstring = connectionstring;
-        }
+      
     }
 }
