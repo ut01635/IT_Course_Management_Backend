@@ -2,5 +2,8 @@
 {
     public class CourseRepository
     {
+        private readonly string _connectionstring;
+
+      
     }
 }
