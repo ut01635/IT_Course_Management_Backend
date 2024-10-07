@@ -24,8 +24,6 @@ namespace IT_Course_Management_Project1.Services
                 NIC = student.NIC,
                 FirstName = student.FirstName,
                 LastName = student.LastName,
-                DOB = student.DOB,
-                Age = student.Age,
                 PhoneNumber = student.PhoneNumber,
                 Email = student.Email
             };
@@ -44,8 +42,6 @@ namespace IT_Course_Management_Project1.Services
                     NIC = student.NIC,
                     FirstName = student.FirstName,
                     LastName = student.LastName,
-                    DOB = student.DOB,
-                    Age = student.Age,
                     PhoneNumber = student.PhoneNumber,
                     Email = student.Email
                 });
@@ -69,8 +65,6 @@ namespace IT_Course_Management_Project1.Services
                 NIC = studentRequest.NIC,
                 FirstName = studentRequest.FirstName,
                 LastName = studentRequest.LastName,
-                DOB = studentRequest.DOB,
-                Age = CalculateAge(studentRequest.DOB),
                 PhoneNumber = studentRequest.PhoneNumber,
                 Email = studentRequest.Email,
                 PassWord = studentRequest.PassWord // Hash the password before saving
@@ -86,8 +80,6 @@ namespace IT_Course_Management_Project1.Services
                 NIC = student.NIC,
                 FirstName = student.FirstName,
                 LastName = student.LastName,
-                DOB = student.DOB,
-                Age = student.Age,
                 PhoneNumber = student.PhoneNumber,
                 Email = student.Email,
             };
@@ -113,8 +105,6 @@ namespace IT_Course_Management_Project1.Services
                 NIC = studentRequest.NIC,
                 FirstName = studentRequest.FirstName,
                 LastName = studentRequest.LastName,
-                DOB = studentRequest.DOB,
-                Age = CalculateAge(studentRequest.DOB),
                 PhoneNumber = studentRequest.PhoneNumber,
                 Email = studentRequest.Email,
                 PassWord = studentRequest.PassWord // Hash before saving
