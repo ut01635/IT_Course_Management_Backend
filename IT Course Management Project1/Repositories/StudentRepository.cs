@@ -1,4 +1,5 @@
-﻿using IT_Course_Management_Project1.Entity;
+﻿using IT_Course_Management_Project1.DTOs.RequestDtos;
+using IT_Course_Management_Project1.Entity;
 using IT_Course_Management_Project1.IRepository;
 using Microsoft.Data.SqlClient;
 
@@ -12,33 +13,6 @@ namespace IT_Course_Management_Project1.Repositories
         {
             _connectionstring = connectionstring;
         }
-
-
-        //Add Students
-        //public async Task<Student> AddBike(Student student)
-        //{
-        //    using (var connection = new SqlConnection(_connectionstring))
-        //    {
-        //        var command = new SqlCommand(
-        //            "INSERT INTO Students (Id, NIC, FirstName, LastName, DOB, Age, PhoneNumber, Email, PassWord) VALUES (@id, @nic, @firstName, @lastName, @dob, @age, @phoneNumber, @email, @passWord)", connection);
-
-        //        command.Parameters.AddWithValue("@id", Guid.NewGuid()); // Assuming you're generating a new GUID
-        //        command.Parameters.AddWithValue("@nic", student.NIC);
-        //        command.Parameters.AddWithValue("@firstName", student.FirstName);
-        //        command.Parameters.AddWithValue("@lastName", student.LastName);
-        //        command.Parameters.AddWithValue("@dob", student.DOB);
-        //        command.Parameters.AddWithValue("@age", student.Age);
-        //        command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
-        //        command.Parameters.AddWithValue("@email", student.Email);
-        //        command.Parameters.AddWithValue("@passWord", student.PassWord);
-
-
-        //        await connection.OpenAsync();
-        //        await command.ExecuteNonQueryAsync();
-        //    }
-
-        //    return student;
-        //}
 
         public async Task<Student> GetStudentByNIC(string NIC)
         {
@@ -63,7 +37,9 @@ namespace IT_Course_Management_Project1.Repositories
                                 LastName = (string)reader["LastName"],
                                 PhoneNumber = reader["PhoneNumber"] as string,
                                 Email = reader["Email"] as string,
-                                PassWord = reader["PassWord"] as string
+                                PassWord = reader["PassWord"] as string,
+                                RegistrationFee = (int)reader["RegistrationFee"],
+                                ImagePath = (string)reader["ImagePath"]
                             };
                         }
                     }
@@ -94,7 +70,9 @@ namespace IT_Course_Management_Project1.Repositories
                             LastName = (string)reader["LastName"],
                             PhoneNumber = reader["PhoneNumber"] as string,
                             Email = reader["Email"] as string,
-                            PassWord = reader["PassWord"] as string
+                            PassWord = reader["PassWord"] as string,
+                            RegistrationFee = (int)reader["RegistrationFee"],
+                            ImagePath = (string)reader["ImagePath"]
                         });
                     }
                 }
@@ -105,7 +83,7 @@ namespace IT_Course_Management_Project1.Repositories
 
         public async Task<Student> AddStudent(Student student)
         {
-            var query = "INSERT INTO Student (Id, NIC, FirstName, LastName, DOB, Age, PhoneNumber, Email, PassWord) VALUES (@id, @nic, @firstName, @lastName, @dob, @age, @phoneNumber, @email, @passWord)";
+            var query = "INSERT INTO Student (Nic , FullName , Email , Phone , Password , RegistrationFee , ImagePath ) VALUES (@nic,@firstName,@lastName,@email,@phone,@password,@registerFee,@imagePath)";
 
             using (var connection = new SqlConnection(_connectionstring))
             {
@@ -119,6 +97,8 @@ namespace IT_Course_Management_Project1.Repositories
                     command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
                     command.Parameters.AddWithValue("@email", student.Email);
                     command.Parameters.AddWithValue("@passWord", student.PassWord);
+                    command.Parameters.AddWithValue("@registerFee", student.RegistrationFee);
+                    command.Parameters.AddWithValue("@imagePath", student.ImagePath); ;
 
                     await connection.OpenAsync();
                     await command.ExecuteNonQueryAsync();
@@ -127,22 +107,20 @@ namespace IT_Course_Management_Project1.Repositories
             return student;
         }
 
-        public async Task<Student> UpdateStudent(Student student)
+        public async Task<Student> UpdateStudent(string NIC, Student student)
         {
-            string query = "UPDATE Student SET NIC = @nic, FirstName = @firstName, LastName = @lastName, DOB = @dob, Age = @age, PhoneNumber = @phoneNumber, Email = @email, PassWord = @passWord WHERE Id = @id";
+            string query = "UPDATE Students SET FullName = @name , Email = @email , Phone = @phone  WHERE Nic = @nic";
 
             using (var connection = new SqlConnection(_connectionstring))
             {
                 await connection.OpenAsync();
                 using (var command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@id", student.Id);
-                    command.Parameters.AddWithValue("@nic", student.NIC);
                     command.Parameters.AddWithValue("@firstName", student.FirstName);
                     command.Parameters.AddWithValue("@lastName", student.LastName);
-                    command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
                     command.Parameters.AddWithValue("@email", student.Email);
-                    command.Parameters.AddWithValue("@passWord", student.PassWord); // Ensure this is hashed before storage
+                    command.Parameters.AddWithValue("@phone", student.PhoneNumber);
+                    command.Parameters.AddWithValue("@nic", student.NIC);
 
                     await command.ExecuteNonQueryAsync();
                 }
@@ -150,6 +128,56 @@ namespace IT_Course_Management_Project1.Repositories
 
             return student;
         }
+
+        
+
+          public async Task AddCourseEnrollId(string Nic, int CourseEnrollId)
+          {
+                var student =await GetStudentByNIC(Nic);
+                if (student != null)
+                {
+                    using (var connection = new SqlConnection(_connectionstring))
+                    {
+                        connection.Open();
+                         var command = connection.CreateCommand();
+                        command.CommandText = "UPDATE Students SET CourseEnrollId = @courseEnrollId WHERE Nic = @nic";
+
+                        // Adding parameters for SQL Server
+                        command.Parameters.AddWithValue("@courseEnrollId", CourseEnrollId);
+                        command.Parameters.AddWithValue("@nic", Nic);
+
+                        // Execute the query
+                         command.ExecuteNonQuery();
+                    }
+                }
+                else
+                {
+                    throw new Exception("Student Not Found!");
+                }
+            }
+
+        public async Task PasswordUpdate(string Nic, PasswordUpdateRequestDTO newPassword)
+        {
+            var student =await GetStudentByNIC(Nic);
+            if (student != null)
+            {
+                using (var connection = new SqlConnection(_connectionstring))
+                {
+                    connection.Open();
+                    var command = connection.CreateCommand();
+                    command.CommandText = "UPDATE Students SET Password = @newPassword  WHERE Nic = @nic";
+                    command.Parameters.AddWithValue("@newPassword", newPassword.NewPassword);
+                    command.Parameters.AddWithValue("@nic", Nic);
+                    command.ExecuteNonQuery();
+                }
+            }
+            else
+            {
+                throw new Exception("Student Not Found!");
+            }
+
+        }
+
 
         public async Task DeleteStudents(string NIC)
         {
