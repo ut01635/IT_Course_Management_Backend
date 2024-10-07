@@ -61,8 +61,6 @@ namespace IT_Course_Management_Project1.Repositories
                                 NIC = (string)reader["NIC"],
                                 FirstName = (string)reader["FirstName"],
                                 LastName = (string)reader["LastName"],
-                                DOB = (DateTime)reader["DOB"],
-                                Age = (int)reader["Age"],
                                 PhoneNumber = reader["PhoneNumber"] as string,
                                 Email = reader["Email"] as string,
                                 PassWord = reader["PassWord"] as string
@@ -94,8 +92,6 @@ namespace IT_Course_Management_Project1.Repositories
                             NIC = (string)reader["NIC"],
                             FirstName = (string)reader["FirstName"],
                             LastName = (string)reader["LastName"],
-                            DOB = (DateTime)reader["DOB"],
-                            Age = (int)reader["Age"],
                             PhoneNumber = reader["PhoneNumber"] as string,
                             Email = reader["Email"] as string,
                             PassWord = reader["PassWord"] as string
@@ -120,8 +116,6 @@ namespace IT_Course_Management_Project1.Repositories
                     command.Parameters.AddWithValue("@nic", student.NIC);
                     command.Parameters.AddWithValue("@firstName", student.FirstName);
                     command.Parameters.AddWithValue("@lastName", student.LastName);
-                    command.Parameters.AddWithValue("@dob", student.DOB);
-                    command.Parameters.AddWithValue("@age", student.Age);
                     command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
                     command.Parameters.AddWithValue("@email", student.Email);
                     command.Parameters.AddWithValue("@passWord", student.PassWord);
@@ -146,8 +140,6 @@ namespace IT_Course_Management_Project1.Repositories
                     command.Parameters.AddWithValue("@nic", student.NIC);
                     command.Parameters.AddWithValue("@firstName", student.FirstName);
                     command.Parameters.AddWithValue("@lastName", student.LastName);
-                    command.Parameters.AddWithValue("@dob", student.DOB);
-                    command.Parameters.AddWithValue("@age", student.Age);
                     command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
                     command.Parameters.AddWithValue("@email", student.Email);
                     command.Parameters.AddWithValue("@passWord", student.PassWord); // Ensure this is hashed before storage

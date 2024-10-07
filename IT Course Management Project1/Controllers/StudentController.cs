@@ -11,9 +11,11 @@ namespace IT_Course_Management_Project1.Controllers
     public class StudentController : ControllerBase
     {
         private readonly IStudentService _studentService;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public StudentController(IStudentService studentService)
+        public StudentController(IStudentService studentService, IWebHostEnvironment webHostEnvironment)
         {
+            _webHostEnvironment = webHostEnvironment;
             _studentService = studentService;
         }
 

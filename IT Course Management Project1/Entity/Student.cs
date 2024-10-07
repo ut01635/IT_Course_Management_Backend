@@ -6,10 +6,11 @@
         public string NIC { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime DOB { get; set; }
-        public int Age { get; set; }
+        public int RegistrationFee { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         public string PassWord { get; set; }
+        public int? CourseEnrollId { get; set; }
+        public string ImagePath { get; set; }
     }
 }
