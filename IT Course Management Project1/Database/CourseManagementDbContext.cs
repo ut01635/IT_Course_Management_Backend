@@ -21,11 +21,12 @@ namespace IT_Institute_API.DataBase
                     USE CourseManagementDB                    
 
                     CREATE TABLE IF NOT EXISTS Student (
-                        Nic NVARCHAR(15) PRIMARY KEY,
-                        FullName NVARCHAR(25) NOT NULL,
+                        NIC NVARCHAR(15) PRIMARY KEY,
+                        FirstName NVARCHAR(25) NOT NULL,
+                        LastName NVARCHAR(25) NOT NULL,
                         Email NVARCHAR(25) NOT NULL,
-                        Phone NVARCHAR(15) NOT NULL,
-                        Password NVARCHAR(50) NOT NULL,
+                        PhoneNumber NVARCHAR(15) NOT NULL,
+                        PassWord NVARCHAR(50) NOT NULL,
                         RegistrationFee INT NOT NULL,
                         CourseEnrollId INT NULL,
                         ImagePath NVARCHAR(100) NULL

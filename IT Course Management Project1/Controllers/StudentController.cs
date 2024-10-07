@@ -59,7 +59,7 @@ namespace IT_Course_Management_Project1.Controllers
         [HttpPut("edit student")]
         public async Task<IActionResult> UpdateStudent(string NIC, StudentRequestDto studentRequest)
         {
-            if (studentRequest == null || NIC != studentRequest.NIC)
+            if (studentRequest == null || NIC != studentRequest.Nic)
                 return BadRequest("Invalid student data.");
 
             await _studentService.UpdateStudent(NIC, studentRequest);
@@ -67,7 +67,7 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
         // DELETE: api/student/{id}
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete Student{id}")]
         public async Task<IActionResult> DeleteStudent(string NIC)
         {
             await _studentService.DeleteStudents(NIC);

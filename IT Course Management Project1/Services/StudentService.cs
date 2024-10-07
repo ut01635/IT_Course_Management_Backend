@@ -53,7 +53,7 @@ namespace IT_Course_Management_Project1.Services
         public async Task<StudentResponseDto> AddStudent(StudentRequestDto studentRequest)
         {
             // Check if the NIC already exists
-            var existingStudent = await _studentRepository.GetStudentByNIC(studentRequest.NIC);
+            var existingStudent = await _studentRepository.GetStudentByNIC(studentRequest.Nic);
             if (existingStudent != null)
             {
                 throw new InvalidOperationException("A student with this NIC already exists.");
@@ -62,12 +62,12 @@ namespace IT_Course_Management_Project1.Services
             // Create a new student object
             var student = new Student
             {
-                NIC = studentRequest.NIC,
+                NIC = studentRequest.Nic,
                 FirstName = studentRequest.FirstName,
                 LastName = studentRequest.LastName,
                 PhoneNumber = studentRequest.PhoneNumber,
                 Email = studentRequest.Email,
-                PassWord = studentRequest.PassWord // Hash the password before saving
+                PassWord = studentRequest.Password // Hash the password before saving
             };
 
             // Add the student to the repository
@@ -98,19 +98,18 @@ namespace IT_Course_Management_Project1.Services
         }
 
 
-        public async Task UpdateStudent(string NIC, StudentRequestDto studentRequest)
+        public async Task UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest)
         {
             var student = new Student
             {
-                NIC = studentRequest.NIC,
+                //NIC = studentRequest.Nic,
                 FirstName = studentRequest.FirstName,
                 LastName = studentRequest.LastName,
                 PhoneNumber = studentRequest.PhoneNumber,
                 Email = studentRequest.Email,
-                PassWord = studentRequest.PassWord // Hash before saving
             };
 
-            await _studentRepository.UpdateStudent(student);
+            await _studentRepository.UpdateStudent(NIC,student);
         }
 
         public async Task DeleteStudents(string NIC)
