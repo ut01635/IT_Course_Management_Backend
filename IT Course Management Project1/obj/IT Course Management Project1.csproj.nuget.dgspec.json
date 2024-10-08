@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Imthath\\OneDrive\\ドキュメント\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj": {}
+    "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Imthath\\OneDrive\\ドキュメント\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj": {
+    "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Imthath\\OneDrive\\ドキュメント\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+        "projectUniqueName": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
         "projectName": "IT Course Management Project1",
-        "projectPath": "C:\\Users\\Imthath\\OneDrive\\ドキュメント\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
-        "packagesPath": "C:\\Users\\Imthath\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Imthath\\OneDrive\\ドキュメント\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\obj\\",
+        "projectPath": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+        "packagesPath": "C:\\Users\\UT01635\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Imthath\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UT01635\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

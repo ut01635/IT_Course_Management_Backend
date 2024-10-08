@@ -34,10 +34,10 @@ namespace IT_Course_Management_Project1.Controllers
                 }
                 catch (Exception ex)
                 {
-                    return BadRequest(ex.Message); 
+                    return BadRequest(ex.Message);
                 }
             }
-            
+
         }
 
         // GET: api/student/{id}
@@ -52,18 +52,36 @@ namespace IT_Course_Management_Project1.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllStudents()
         {
-            var students = await _studentService.GetAllStudents();
-            return Ok(students);
+            try
+            {
+                var students = await _studentService.GetAllStudents();
+                return Ok(students);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
         }
+
+
         // PUT: api/student/{id}
         [HttpPut("edit student")]
-        public async Task<IActionResult> UpdateStudent(string NIC, StudentRequestDto studentRequest)
+        public async Task<IActionResult> UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest)
         {
-            if (studentRequest == null || NIC != studentRequest.Nic)
+            if (studentRequest == null || NIC != null)
+            {
                 return BadRequest("Invalid student data.");
+            }
 
-            await _studentService.UpdateStudent(NIC, studentRequest);
-            return NoContent();
+            else
+            {
+                var data = await _studentService.UpdateStudent(NIC, studentRequest);
+                return Ok(data);
+
+            }
+
+
         }
 
         // DELETE: api/student/{id}

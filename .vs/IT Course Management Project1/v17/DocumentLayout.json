@@ -1,70 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\irepository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\iservices\\istudentservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\istudentservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\requestdtos\\studentupdaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\requestdtos\\studentupdaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\irepository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\requestdtos\\studentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\requestdtos\\studentrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\database\\coursemanagementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\entity\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\database\\coursemanagementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\database\\coursemanagementdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\requestdtos\\courserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\requestdtos\\courserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\responsedtos\\courseresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\dtos\\responsedtos\\courseresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\responsedtos\\courseresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\responsedtos\\installmentresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\responsedtos\\installmentresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\responsedtos\\fullpaymentresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\responsedtos\\fullpaymentresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\responsedtos\\courseenrollresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\responsedtos\\courseenrollresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\responsedtos\\contactusresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\responsedtos\\contactusresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\requestdtos\\passwordupdaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\requestdtos\\passwordupdaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\dtos\\requestdtos\\courseenrollrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\requestdtos\\courseenrollrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\imthath\\onedrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\github\\it_course_management_backend\\it course management project1\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\dtos\\responsedtos\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\responsedtos\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,214 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IStudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IStudentRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\IStudentRepository.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IStudentRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IRepository\\IStudentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "CourseManagementDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\CourseManagementDbContext.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Database\\CourseManagementDbContext.cs",
+              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\CourseManagementDbContext.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Database\\CourseManagementDbContext.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAiwIMAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T18:49:46.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\StudentService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\StudentService.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\StudentService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Services\\StudentService.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAAG8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T18:44:40.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T18:43:22.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\StudentRepository.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\StudentRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Repositories\\StudentRepository.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAG8AAAB2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T18:09:29.27Z",
+              "WhenOpened": "2024-10-08T06:18:00.296Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "StudentRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\StudentRequestDto.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\RequestDtos\\StudentRequestDto.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\StudentRequestDto.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\RequestDtos\\StudentRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Student.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Student.cs",
+              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Student.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Entity\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:34:18.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentUpdateRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\StudentUpdateRequestDTO.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\RequestDtos\\StudentUpdateRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\StudentUpdateRequestDTO.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\RequestDtos\\StudentUpdateRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:31:46.322Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CourseManagementDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\CourseManagementDbContext.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Database\\CourseManagementDbContext.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\CourseManagementDbContext.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Database\\CourseManagementDbContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T18:11:07.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CourseRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\CourseRequestDTO.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\RequestDtos\\CourseRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\CourseRequestDTO.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\RequestDtos\\CourseRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:32:40.956Z",
+              "WhenOpened": "2024-10-08T06:02:10.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "StudentResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\StudentResponseDto.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\ResponseDtos\\StudentResponseDto.cs",
+              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\StudentResponseDto.cs",
+              "RelativeToolTip": "IT Course Management Project1\\DTOs\\ResponseDtos\\StudentResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T05:59:27.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CourseResponsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
+              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
               "RelativeToolTip": "IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:24:50.187Z",
+              "WhenOpened": "2024-10-08T05:59:24.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InstallmentResponsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\InstallmentResponsDTO.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\ResponseDtos\\InstallmentResponsDTO.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\InstallmentResponsDTO.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\ResponseDtos\\InstallmentResponsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:27:47.765Z",
+              "WhenOpened": "2024-10-08T05:57:06.754Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FullPaymentResponsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\FullPaymentResponsDTO.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\ResponseDtos\\FullPaymentResponsDTO.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\FullPaymentResponsDTO.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\ResponseDtos\\FullPaymentResponsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IStudentService .cs",
+              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IStudentService .cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IStudentService .cs",
+              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IStudentService .cs",
+              "RelativeToolTip": "IT Course Management Project1\\IServices\\IStudentService .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:25:39.153Z",
+              "WhenOpened": "2024-10-08T05:57:01.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CourseEnrollResponsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\CourseEnrollResponsDTO.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\ResponseDtos\\CourseEnrollResponsDTO.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\CourseEnrollResponsDTO.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\ResponseDtos\\CourseEnrollResponsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\StudentService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Services\\StudentService.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAAIIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:25:13.129Z",
+              "WhenOpened": "2024-10-08T05:56:57.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ContactUsResponsDto.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\ContactUsResponsDto.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\ResponseDtos\\ContactUsResponsDto.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\ContactUsResponsDto.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\ResponseDtos\\ContactUsResponsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\IStudentRepository.cs",
+              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IStudentRepository.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IRepository\\IStudentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:28:21.951Z",
+              "WhenOpened": "2024-10-08T05:56:51.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PasswordUpdateRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\PasswordUpdateRequestDTO.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\RequestDtos\\PasswordUpdateRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\PasswordUpdateRequestDTO.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\RequestDtos\\PasswordUpdateRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Repositories\\StudentRepository.cs",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAAAMIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:31:05.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CourseEnrollRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\CourseEnrollRequestDTO.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\RequestDtos\\CourseEnrollRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\RequestDtos\\CourseEnrollRequestDTO.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\RequestDtos\\CourseEnrollRequestDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T17:29:57.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CourseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\CourseRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\CourseRepository.cs",
-              "ToolTip": "C:\\Users\\Imthath\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\CourseRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Repositories\\CourseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T16:32:44.506Z",
+              "WhenOpened": "2024-10-08T05:56:47.469Z",
               "EditorCaption": ""
             }
           ]

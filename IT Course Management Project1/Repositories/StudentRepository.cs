@@ -31,7 +31,7 @@ namespace IT_Course_Management_Project1.Repositories
                         {
                             student = new Student
                             {
-                                Id = (Guid)reader["Id"],
+                                //Id = (Guid)reader["Id"],
                                 NIC = (string)reader["NIC"],
                                 FirstName = (string)reader["FirstName"],
                                 LastName = (string)reader["LastName"],
@@ -64,7 +64,7 @@ namespace IT_Course_Management_Project1.Repositories
                     {
                         students.Add(new Student
                         {
-                            Id = (Guid)reader["Id"],
+                            //Id = (Guid)reader["Id"],
                             NIC = (string)reader["NIC"],
                             FirstName = (string)reader["FirstName"],
                             LastName = (string)reader["LastName"],
@@ -89,20 +89,20 @@ namespace IT_Course_Management_Project1.Repositories
             {
 
                 var command = new SqlCommand(query, connection);
-       
-                    command.Parameters.AddWithValue("@id", Guid.NewGuid());
-                    command.Parameters.AddWithValue("@nic", student.NIC);
-                    command.Parameters.AddWithValue("@firstName", student.FirstName);
-                    command.Parameters.AddWithValue("@lastName", student.LastName);
-                    command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
-                    command.Parameters.AddWithValue("@email", student.Email);
-                    command.Parameters.AddWithValue("@passWord", student.PassWord);
-                    command.Parameters.AddWithValue("@registerFee", student.RegistrationFee);
-                    command.Parameters.AddWithValue("@imagePath", student.ImagePath); ;
 
-                    await connection.OpenAsync();
-                    await command.ExecuteNonQueryAsync();
-                
+                command.Parameters.AddWithValue("@id", Guid.NewGuid());
+                command.Parameters.AddWithValue("@nic", student.NIC);
+                command.Parameters.AddWithValue("@firstName", student.FirstName);
+                command.Parameters.AddWithValue("@lastName", student.LastName);
+                command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
+                command.Parameters.AddWithValue("@email", student.Email);
+                command.Parameters.AddWithValue("@passWord", student.PassWord);
+                command.Parameters.AddWithValue("@registerFee", student.RegistrationFee);
+                command.Parameters.AddWithValue("@imagePath", student.ImagePath); ;
+
+                await connection.OpenAsync();
+                await command.ExecuteNonQueryAsync();
+
             }
             return student;
         }
@@ -129,36 +129,36 @@ namespace IT_Course_Management_Project1.Repositories
             return student;
         }
 
-        
 
-          public async Task AddCourseEnrollId(string Nic, int CourseEnrollId)
-          {
-                var student =await GetStudentByNIC(Nic);
-                if (student != null)
+
+        public async Task AddCourseEnrollId(string Nic, int CourseEnrollId)
+        {
+            var student = await GetStudentByNIC(Nic);
+            if (student != null)
+            {
+                using (var connection = new SqlConnection(_connectionstring))
                 {
-                    using (var connection = new SqlConnection(_connectionstring))
-                    {
-                        connection.Open();
-                         var command = connection.CreateCommand();
-                        command.CommandText = "UPDATE Students SET CourseEnrollId = @courseEnrollId WHERE Nic = @nic";
+                    connection.Open();
+                    var command = connection.CreateCommand();
+                    command.CommandText = "UPDATE Students SET CourseEnrollId = @courseEnrollId WHERE Nic = @nic";
 
-                        // Adding parameters for SQL Server
-                        command.Parameters.AddWithValue("@courseEnrollId", CourseEnrollId);
-                        command.Parameters.AddWithValue("@nic", Nic);
+                    // Adding parameters for SQL Server
+                    command.Parameters.AddWithValue("@courseEnrollId", CourseEnrollId);
+                    command.Parameters.AddWithValue("@nic", Nic);
 
-                        // Execute the query
-                         command.ExecuteNonQuery();
-                    }
-                }
-                else
-                {
-                    throw new Exception("Student Not Found!");
+                    // Execute the query
+                    command.ExecuteNonQuery();
                 }
             }
+            else
+            {
+                throw new Exception("Student Not Found!");
+            }
+        }
 
         public async Task PasswordUpdate(string Nic, PasswordUpdateRequestDTO newPassword)
         {
-            var student =await GetStudentByNIC(Nic);
+            var student = await GetStudentByNIC(Nic);
             if (student != null)
             {
                 using (var connection = new SqlConnection(_connectionstring))
