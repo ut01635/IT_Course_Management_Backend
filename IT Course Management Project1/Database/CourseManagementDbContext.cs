@@ -36,14 +36,15 @@ namespace IT_Institute_API.DataBase
                         Id INT PRIMARY KEY,
                         CourseName NVARCHAR(25) NOT NULL,
                         Level NVARCHAR(25) NOT NULL,
-                        TotalFee INT NOT NULL
+                        TotalFee INT NOT NULL,
+                        Duration NVARCHAR(5) NOT NULL,
+                        ImagePath NVARCHAR(100) NULL
                     );
 
                     CREATE TABLE IF NOT EXISTS CourseEnrollDetail (
                         Id INT PRIMARY KEY,
                         Nic NVARCHAR(15) NOT NULL,
                         CourseId INT NOT NULL,
-                        Duration NVARCHAR(5) NOT NULL,
                         InstallmentId INT NULL,
                         FullPaymentId INT NULL,
                         CourseEnrollDate DATE NOT NULL,
@@ -98,30 +99,30 @@ namespace IT_Institute_API.DataBase
 
                     IF NOT EXISTS (SELECT 1 FROM Courses WHERE Id = 314917)
                     BEGIN
-                        INSERT INTO Courses (Id, CourseName, Level, TotalFee)
+                        INSERT INTO Courses (Id, CourseName, Level, TotalFee, Duration, ImagePath )
                         VALUES
-                        (314917, 'Python', 'Intermediate', 24000),
-                        (314918, 'C#', 'Beginner', 15000),
-                        (314919, 'JavaScript', 'Advanced', 18000),
-                        (314920, 'SQL', 'Intermediate', 13000),
-                        (314921, 'Java', 'Advanced', 22000);
+                        (314917, 'Python', 'Intermediate', 24000,'06-Months',NULL),
+                        (314918, 'C#', 'Beginner', 15000,'08-Months',NULL),
+                        (314919, 'JavaScript', 'Advanced', 18000,'07-Months',NULL),
+                        (314920, 'SQL', 'Intermediate', 13000,'08-Months',NULL),
+                        (314921, 'Java', 'Advanced', 22000,'05-Months',NULL);
                     END;
 
                     -- Sample Insert Data for CourseEnrollDetails
                     IF NOT EXISTS (SELECT 1 FROM CourseEnrollDetails WHERE Id = 452320)
                     BEGIN
-                        INSERT INTO CourseEnrollDetails (Id, Nic, CourseId, Duration, InstallmentId, FullPaymentId, CourseEnrollDate, Status)
+                        INSERT INTO CourseEnrollDetails (Id, Nic, CourseId, InstallmentId, FullPaymentId, CourseEnrollDate, Status)
                         VALUES
-                        (452320, '200224204071', 314917, '3', 838045, NULL, '2024-09-16', 'Active'),
-                        (452321, '200224204072', 314918, '4', 838046, NULL, '2024-09-15', 'Active'),
-                        (452322, '200224204073', 314919, '2', 838047, NULL, '2024-09-14', 'Active'),
-                        (452323, '200224204074', 314920, '5', 838048, NULL, '2024-09-13', 'Inactive'),
-                        (452324, '200224204075', 314921, '6', 838049, NULL, '2024-09-12', 'Active'),
-                        (452325, '200224204076', 314917, '1', 838050, NULL, '2024-09-11', 'Active'),
-                        (452326, '200224204077', 314919, '3', 838051, NULL, '2024-09-10', 'Active'),
-                        (452327, '200224204078', 314920, '2', 838052, NULL, '2024-09-09', 'Inactive'),
-                        (452328, '200224204079', 314921, '4', 838053, NULL, '2024-09-08', 'Active'),
-                        (452329, '200224204080', 314918, '5', 838054, NULL, '2024-09-07', 'Active');
+                        (452320, '200224204071', 314917,  838045, NULL, '2024-09-16', 'Active'),
+                        (452321, '200224204072', 314918,  838046, NULL, '2024-09-15', 'Active'),
+                        (452322, '200224204073', 314919,  838047, NULL, '2024-09-14', 'Active'),
+                        (452323, '200224204074', 314920,  838048, NULL, '2024-09-13', 'Inactive'),
+                        (452324, '200224204075', 314921,  838049, NULL, '2024-09-12', 'Active'),
+                        (452325, '200224204076', 314917,  838050, NULL, '2024-09-11', 'Active'),
+                        (452326, '200224204077', 314919,  838051, NULL, '2024-09-10', 'Active'),
+                        (452327, '200224204078', 314920,  838052, NULL, '2024-09-09', 'Inactive'),
+                        (452328, '200224204079', 314921,  838053, NULL, '2024-09-08', 'Active'),
+                        (452329, '200224204080', 314918,  838054, NULL, '2024-09-07', 'Active');
                     END;
 
                     -- Sample Insert Data for Installments

@@ -86,16 +86,7 @@ namespace IT_Course_Management_Project1.Services
             return response;
         }
 
-        private int CalculateAge(DateTime dob)
-        {
-            var today = DateTime.Today;
-            int age = today.Year - dob.Year;
-
-            // Adjust age if the birthday hasn't occurred yet this year
-            if (dob.Date > today.AddYears(-age)) age--;
-
-            return age;
-        }
+        
 
 
         public async Task UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest)

@@ -135,3 +135,14 @@ C:\Users\Imthath\OneDrive\ドキュメント\GitHub\IT_Course_Management_Backend
 C:\Users\Imthath\OneDrive\ドキュメント\GitHub\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.pdb
 C:\Users\Imthath\OneDrive\ドキュメント\GitHub\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.genruntimeconfig.cache
 C:\Users\Imthath\OneDrive\ドキュメント\GitHub\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\ref\IT Course Management Project1.dll
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.csproj.AssemblyReference.cache
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.GeneratedMSBuildEditorConfig.editorconfig
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.AssemblyInfoInputs.cache
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.AssemblyInfo.cs
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.csproj.CoreCompileInputs.cache
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.MvcApplicationPartsAssemblyInfo.cs
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.MvcApplicationPartsAssemblyInfo.cache
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.sourcelink.json
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.dll
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\refint\IT Course Management Project1.dll
+X:\Piragash (Actitivity)\Milestone Project\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.pdb
