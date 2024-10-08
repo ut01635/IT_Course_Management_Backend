@@ -1,22 +1,20 @@
-﻿namespace IT_Course_Management_Project1.Entity
+﻿namespace IT_Course_Management_Project1.DTOs.RequestDtos
 {
-    public class Course
+    public class CourseRequestDto
     {
-        public Guid CourseId { get;set; }
+        
         public string CourseName { get; set; }
 
         public string CourseCategory { get; set; }
 
-        public int Duration {  get; set; }
+        public int Duration { get; set; }
 
-        public string CourseFee {  get; set; }
+        public string CourseFee { get; set; }
 
         public string Lecturer { get; set; }
 
         public string Description { get; set; }
 
         public string CoursePhoto { get; set; }
-
-
     }
 }
