@@ -6,5 +6,11 @@
         public string CourseName { get; set; }
         public string Level { get; set; }
         public int TotalFee { get; set; }
+
+        public string Duration { get; set; }
+
+        public IFormFile? ImageFile { get; set; }
+
+
     }
 }

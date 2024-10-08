@@ -57,9 +57,9 @@ namespace IT_Course_Management_Project1.Controllers
         }
         // PUT: api/student/{id}
         [HttpPut("edit student")]
-        public async Task<IActionResult> UpdateStudent(string NIC, StudentRequestDto studentRequest)
+        public async Task<IActionResult> UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest)
         {
-            if (studentRequest == null || NIC != studentRequest.Nic)
+            if (studentRequest == null || NIC == null)
                 return BadRequest("Invalid student data.");
 
             await _studentService.UpdateStudent(NIC, studentRequest);
