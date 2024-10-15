@@ -24,7 +24,7 @@ namespace IT_Course_Management_Project1.Repositories
                 command.Parameters.AddWithValue("@Id", Guid.NewGuid());
                 command.Parameters.AddWithValue("@courseName", course.CourseName);
                 command.Parameters.AddWithValue("@level", course.Level);
-                command.Parameters.AddWithValue("@totalFee", course.TotalFee);
+                command.Parameters.AddWithValue("@totalFee", course.Fees);
                 command.Parameters.AddWithValue("@duration", course.Duration);
                 command.Parameters.AddWithValue("@imagePath", course.ImagePath);
                
