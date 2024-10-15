@@ -37,5 +37,11 @@ namespace IT_Course_Management_Project1.Services
             return await _courseRepository.UpdateCourseAsync(id, course);
         }
 
+
+        public async Task<int> DeleteCourseAsync(int id)
+        {
+            return await _courseRepository.DeleteCourseAsync(id);
+        }
+
     }
 }

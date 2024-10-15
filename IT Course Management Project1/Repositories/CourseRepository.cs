@@ -144,6 +144,21 @@ namespace IT_Course_Management_Project1.Repositories
 
 
 
+        public async Task<int> DeleteCourseAsync(int id)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var command = connection.CreateCommand();
+                command.CommandText = "DELETE FROM Course WHERE Id = @id";
+                command.Parameters.AddWithValue("@id", id);
+
+                return await command.ExecuteNonQueryAsync();
+            }
+        }
+
+
+
 
 
     }

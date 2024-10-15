@@ -107,6 +107,19 @@ namespace IT_Course_Management_Project1.Controllers
 
 
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCourse(int id)
+        {
+            var result = await _courseService.DeleteCourseAsync(id);
+            if (result == 0)
+            {
+                return NotFound();
+            }
+            return NoContent();
+        }
+
+
+
 
 
 
