@@ -82,6 +82,39 @@ namespace IT_Course_Management_Project1.Repositories
 
 
 
+        public async Task<Course> GetCourseByIdAsync(int id)
+        {
+            Course course = null;
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM Course WHERE Id = @id"; // Corrected table name
+                command.Parameters.AddWithValue("@id", id);
+
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    if (await reader.ReadAsync())
+                    {
+                        course = new Course
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                            CourseName = reader.GetString(reader.GetOrdinal("CourseName")),
+                            Level = reader.GetString(reader.GetOrdinal("Level")),
+                            Duration = reader.GetString(reader.GetOrdinal("Duration")),
+                            Fees = reader.GetDecimal(reader.GetOrdinal("Fees")),
+                            ImagePath = reader.IsDBNull(reader.GetOrdinal("ImagePath")) ? null : reader.GetString(reader.GetOrdinal("ImagePath"))
+                        };
+                    }
+                }
+            }
+
+            return course;
+        }
+
+
+
 
     }
 }

@@ -7,6 +7,8 @@ namespace IT_Course_Management_Project1.IRepository
         Task<Course> AddCourseAsync(Course course);
         Task<IEnumerable<Course>> GetAllCoursesAsync();
 
+        Task<Course> GetCourseByIdAsync(int id);
+
 
     }
 }

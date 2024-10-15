@@ -26,5 +26,10 @@ namespace IT_Course_Management_Project1.Services
         {
             return await _courseRepository.GetAllCoursesAsync();
         }
+
+        public async Task<Course> GetCourseByIdAsync(int id)
+        {
+            return await _courseRepository.GetCourseByIdAsync(id);
+        }
     }
 }
