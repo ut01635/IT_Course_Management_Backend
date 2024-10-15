@@ -14,7 +14,10 @@ namespace IT_Course_Management_Project1.Repositories
         }
 
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         public async Task<Course> AddCourseAsync(Course course)
         {
             using (var connection = new SqlConnection(_connectionString))
@@ -30,7 +33,10 @@ namespace IT_Course_Management_Project1.Repositories
                 command.Parameters.AddWithValue("@courseName", course.CourseName);
                 command.Parameters.AddWithValue("@level", course.Level);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 command.Parameters.AddWithValue("@totalFee", course.Fees);
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
                 command.Parameters.AddWithValue("@duration", course.Duration);
@@ -57,9 +63,12 @@ namespace IT_Course_Management_Project1.Repositories
 
 
 
+<<<<<<< Updated upstream
 
 
 
 
+=======
+>>>>>>> Stashed changes
     }
 }

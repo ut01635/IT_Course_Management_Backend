@@ -39,6 +39,9 @@ namespace IT_Course_Management_Project1
             builder.Services.AddScoped<ICourseService, CourseService>();
 >>>>>>> Stashed changes
 
+            builder.Services.AddSingleton<ICourseRepository>(new CourseRepository(connectionString));
+            builder.Services.AddScoped<ICourseService, CourseService>();
+
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

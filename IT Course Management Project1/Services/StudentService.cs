@@ -59,6 +59,7 @@
 //            {
 //                var studentDtos = new List<StudentResponseDto>();
 
+<<<<<<< Updated upstream
 //                foreach (var student in students)
 //                {
 //                    studentDtos.Add(new StudentResponseDto
@@ -72,6 +73,12 @@
 //                        Password = student.PassWord,
 //                        ImagePath = student.ImagePath,
 //                        RegistrationFee = student.RegistrationFee,
+=======
+        public async Task<Student> UpdateStudentAsync(string nic, Student student)
+        {
+            return await _studentRepository.UpdateStudentAsync(nic, student);
+        }
+>>>>>>> Stashed changes
 
 //                    });
 //                }

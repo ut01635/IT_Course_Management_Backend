@@ -2,6 +2,7 @@
   "version": 2,
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "dgSpecHash": "2cZZzVOyTsk=",
 =======
   "dgSpecHash": "G3dRttshsRSJI+cLjJpzLJwsXFcyeWWBdAX08eBAd6vVZylER5rTSLF0RLPhtqhjYL5Z76CIKdu5MBdxZS1Lxw==",
@@ -11,6 +12,11 @@
 >>>>>>> Stashed changes
   "success": true,
   "projectFilePath": "X:\\Piragash (Actitivity)\\Milestone Project\\Milestone 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+=======
+  "dgSpecHash": "6Oy826ufCR04ZTD2Gjw6TQGD3OiMJ+HhiMUB11ZImfVxGuKwb4a4H+26S+J9hu2/v5+B04dzVPbDQlV7VJYz/g==",
+  "success": true,
+  "projectFilePath": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\UT01228\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\UT01228\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

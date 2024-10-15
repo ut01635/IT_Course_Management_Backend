@@ -7,5 +7,10 @@ namespace IT_Course_Management_Project1.IServices
     public interface ICourseService
     {
         Task<Course> AddCourseAsync(Course course);
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
     }
 }

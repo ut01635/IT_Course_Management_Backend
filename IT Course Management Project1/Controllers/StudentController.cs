@@ -88,6 +88,16 @@
             
         }
 
+<<<<<<< Updated upstream
+=======
+        [HttpPut("{nic}")]
+        public async Task<ActionResult> UpdateStudent(string nic, [FromBody] Student student)
+        {
+            var result = await _studentService.UpdateStudentAsync(nic, student);
+            if (result == null) return NotFound();
+            return NoContent();
+        }
+>>>>>>> Stashed changes
 
         // PUT: api/student/{id}
         [HttpPut("edit student")]
