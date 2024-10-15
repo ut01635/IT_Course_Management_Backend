@@ -32,22 +32,36 @@ namespace IT_Course_Management_Project1.Services
         public async Task<List<StudentResponseDto>> GetAllStudents()
         {
             var students = await _studentRepository.GetAllStudents();
-            var studentDtos = new List<StudentResponseDto>();
 
-            foreach (var student in students)
+            if (students != null)
             {
-                studentDtos.Add(new StudentResponseDto
-                {
-                    Id = student.Id,
-                    NIC = student.NIC,
-                    FirstName = student.FirstName,
-                    LastName = student.LastName,
-                    PhoneNumber = student.PhoneNumber,
-                    Email = student.Email
-                });
-            }
+                var studentDtos = new List<StudentResponseDto>();
 
-            return studentDtos;
+                foreach (var student in students)
+                {
+                    studentDtos.Add(new StudentResponseDto
+                    {
+                        //Id = student.Id,
+                        NIC = student.NIC,
+                        FirstName = student.FirstName,
+                        LastName = student.LastName,
+                        PhoneNumber = student.PhoneNumber,
+                        Email = student.Email,
+                        Password = student.PassWord,
+                        ImagePath = student.ImagePath,
+                        RegistrationFee = student.RegistrationFee,
+
+                    });
+                }
+
+                return studentDtos;
+
+            }
+            else
+            {
+                throw new Exception("Data Not found");
+            }
+           
         }
 
         public async Task<StudentResponseDto> AddStudent(StudentRequestDto studentRequest)
@@ -86,10 +100,8 @@ namespace IT_Course_Management_Project1.Services
             return response;
         }
 
-        
 
-
-        public async Task UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest)
+        public async Task<StudentResponseDto> UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest)
         {
             var student = new Student
             {
@@ -100,7 +112,17 @@ namespace IT_Course_Management_Project1.Services
                 Email = studentRequest.Email,
             };
 
-            await _studentRepository.UpdateStudent(NIC,student);
+            await _studentRepository.UpdateStudent(NIC, student);
+
+            var Respone = new StudentResponseDto
+            {
+                Id = student.Id,
+                FirstName = student.FirstName,
+                LastName = student.LastName,
+                PhoneNumber = student.PhoneNumber,
+                Email = student.Email,
+            };
+            return Respone;
         }
 
         public async Task DeleteStudents(string NIC)

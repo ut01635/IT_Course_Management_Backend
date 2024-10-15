@@ -1,8 +1,6 @@
 
-using IT_Course_Management_Project1.IRepository;
-using IT_Course_Management_Project1.IServices;
-using IT_Course_Management_Project1.Repositories;
-using IT_Course_Management_Project1.Services;
+using IT_Course_Management_Project1.Database;
+
 
 namespace IT_Course_Management_Project1
 {
@@ -12,11 +10,16 @@ namespace IT_Course_Management_Project1
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DbConnect");
+            DatabaseInitializer database = new DatabaseInitializer();
+            database.InitializeDatabase();
+            database.CreateTable();
+            database.InserSampleData();
 
-            builder.Services.AddSingleton<IStudentRepository>(provider => new StudentRepository(connectionString));
-            builder.Services.AddScoped<IStudentService, StudentService>();
+            // Add services to the container.
+           // var connectionString = builder.Configuration.GetConnectionString("DbConnect");
+
+         
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
