@@ -115,6 +115,36 @@ namespace IT_Course_Management_Project1.Repositories
 
 
 
+        public async Task<int> UpdateCourseAsync(int id, Course course)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var command = connection.CreateCommand();
+                command.CommandText = @"
+                    UPDATE Course
+                    SET CourseName = @courseName,
+                        Level = @level,
+                        Duration = @duration,
+                        Fees = @fees,
+                        ImagePath = @imagePath
+                    WHERE Id = @id;
+                ";
+
+                command.Parameters.AddWithValue("@id", id);
+                command.Parameters.AddWithValue("@courseName", course.CourseName);
+                command.Parameters.AddWithValue("@level", course.Level);
+                command.Parameters.AddWithValue("@duration", course.Duration);
+                command.Parameters.AddWithValue("@fees", course.Fees);
+                command.Parameters.AddWithValue("@imagePath", course.ImagePath ?? (object)DBNull.Value);
+
+                return await command.ExecuteNonQueryAsync(); // Returns the number of affected rows
+            }
+        }
+
+
+
+
 
     }
 }

@@ -11,5 +11,7 @@ namespace IT_Course_Management_Project1.IServices
 
         Task<Course> GetCourseByIdAsync(int id);
 
+        Task<int> UpdateCourseAsync(int id, Course course);
+
     }
 }
