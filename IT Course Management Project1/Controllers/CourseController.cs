@@ -21,7 +21,6 @@ namespace IT_Course_Management_Project1.Controllers
             _courseService = courseService;
         }
 
-
         [HttpPost]
         public async Task<IActionResult> AddCourse([FromBody] CourseRequestDTO courseDto)
         {
@@ -47,7 +46,7 @@ namespace IT_Course_Management_Project1.Controllers
             try
             {
                 var addedCourse = await _courseService.AddCourseAsync(course);
-                return CreatedAtAction(nameof(AddCourse), new { id = addedCourse.Id }, addedCourse);
+                return CreatedAtAction(nameof(GetCourseById), new { id = addedCourse.Id }, addedCourse);
             }
             catch (SqlException sqlEx)
             {
@@ -59,7 +58,6 @@ namespace IT_Course_Management_Project1.Controllers
             }
         }
 
-
         [HttpGet("GetAllCourses")]
         public async Task<IActionResult> GetAllCourses()
         {
@@ -67,6 +65,16 @@ namespace IT_Course_Management_Project1.Controllers
             return Ok(courses);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCourseById(int id)
+        {
+            var course = await _courseService.GetCourseByIdAsync(id);
+            if (course == null)
+            {
+                return NotFound();
+            }
+            return Ok(course);
+        }
 
 
 
