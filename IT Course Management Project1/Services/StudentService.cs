@@ -30,7 +30,7 @@ namespace IT_Course_Management_Project1.Services
             return await _studentRepository.GetStudentByNicAsync(nic);
         }
 
-        public async Task<int> UpdateStudentAsync(string nic, Student student)
+        public async Task<Student> UpdateStudentAsync(string nic, Student student)
         {
             return await _studentRepository.UpdateStudentAsync(nic, student);
         }
