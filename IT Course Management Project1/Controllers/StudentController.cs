@@ -44,7 +44,7 @@ namespace IT_Course_Management_Project1.Controllers
         public async Task<ActionResult> UpdateStudent(string nic, [FromBody] Student student)
         {
             var result = await _studentService.UpdateStudentAsync(nic, student);
-            if (result == 0) return NotFound();
+            if (result == null) return NotFound();
             return NoContent();
         }
 
