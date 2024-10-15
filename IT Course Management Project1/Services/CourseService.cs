@@ -15,20 +15,5 @@ namespace IT_Course_Management_Project1.Services
         {
             _courseRepository = courseRepository;
         }
-
-
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
-        public async Task<Course> AddCourseAsync(Course course)
-        {
-            return await _courseRepository.AddCourseAsync(course);
-        }
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
     }
 }
