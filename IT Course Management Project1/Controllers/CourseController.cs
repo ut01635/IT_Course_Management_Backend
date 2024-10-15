@@ -76,6 +76,36 @@ namespace IT_Course_Management_Project1.Controllers
             return Ok(course);
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCourse(int id, [FromBody] Course course)
+        {
+            // Check if course is null or id does not match
+            if (course == null || id != course.Id)
+            {
+                return BadRequest("Course data is invalid or ID mismatch.");
+            }
+
+            try
+            {
+                // Attempt to update the course
+                var result = await _courseService.UpdateCourseAsync(id, course);
+                if (result == null)
+                {
+                    return NotFound($"Course with ID {id} not found.");
+                }
+                return NoContent(); // Successfully updated
+            }
+            catch (SqlException sqlEx)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Database error: {sqlEx.Message}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"An error occurred while updating the course: {ex.Message}");
+            }
+        }
+
+
 
 
 
