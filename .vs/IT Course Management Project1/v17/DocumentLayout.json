@@ -3,60 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\entity\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\iservices\\istudentservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\istudentservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\irepository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\entity\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\dtos\\responsedtos\\courseresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\responsedtos\\courseresponsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|c:\\users\\ut01635\\documents\\github\\it_course_management_backend\\it course management project1\\dtos\\responsedtos\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\dtos\\responsedtos\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,171 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Enrollment.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Enrollment.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Enrollment.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Enrollment.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Entity\\Enrollment.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAA5wAkAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T05:49:48.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Course.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Course.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Course.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Entity\\Course.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T05:48:52.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Program.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Program.cs",
               "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Program.cs",
               "RelativeToolTip": "IT Course Management Project1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAMAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T05:45:03.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\appsettings.json",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\appsettings.json",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\appsettings.json",
-              "RelativeToolTip": "IT Course Management Project1\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-15T05:44:17.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DatabaseInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAQwOAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T05:43:25.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Database\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\AppDbContext.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Database\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T05:42:26.536Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Student.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Student.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Student.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Entity\\Student.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T06:02:10.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "StudentResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\StudentResponseDto.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\ResponseDtos\\StudentResponseDto.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\StudentResponseDto.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\ResponseDtos\\StudentResponseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T05:59:27.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CourseResponsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
-              "RelativeToolTip": "IT Course Management Project1\\DTOs\\ResponseDtos\\CourseResponsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T05:59:24.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T05:57:06.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IStudentService .cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IStudentService .cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IStudentService .cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IStudentService .cs",
-              "RelativeToolTip": "IT Course Management Project1\\IServices\\IStudentService .cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T05:57:01.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\StudentService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\StudentService.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\StudentService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Services\\StudentService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAApwBYAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T05:56:57.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IStudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IStudentRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\IStudentRepository.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IStudentRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IRepository\\IStudentRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T05:56:51.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\StudentRepository.cs",
-              "ToolTip": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\StudentRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Repositories\\StudentRepository.cs",
-              "ViewState": "AQIAAKUAAAAAAAAAAAAAAMIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T05:56:47.469Z"
+              "WhenOpened": "2024-10-15T06:09:10.841Z",
+              "EditorCaption": ""
             }
           ]
         }
