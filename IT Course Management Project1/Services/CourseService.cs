@@ -15,14 +15,5 @@ namespace IT_Course_Management_Project1.Services
         {
             _courseRepository = courseRepository;
         }
-
-
-
-        public async Task<Course> AddCourseAsync(Course course)
-        {
-            return await _courseRepository.AddCourseAsync(course);
-        }
-
-
     }
 }
