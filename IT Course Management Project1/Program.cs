@@ -1,4 +1,5 @@
 
+using IT_Course_Management_Project1.Database;
 using IT_Course_Management_Project1.IRepository;
 using IT_Course_Management_Project1.IServices;
 using IT_Course_Management_Project1.Repositories;
@@ -12,8 +13,14 @@ namespace IT_Course_Management_Project1
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DbConnect");
+            DatabaseInitializer database = new DatabaseInitializer();
+            database.InitializeDatabase();
+            database.CreateTable();
+            database.InserSampleData();
+
+            // Add services to the container.
+           // var connectionString = builder.Configuration.GetConnectionString("DbConnect");
 
             builder.Services.AddSingleton<IStudentRepository>(provider => new StudentRepository(connectionString));
             builder.Services.AddScoped<IStudentService, StudentService>();
