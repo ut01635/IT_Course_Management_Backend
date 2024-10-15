@@ -23,8 +23,17 @@ namespace IT_Course_Management_Project1
             // Add services to the container.
             // var connectionString = builder.Configuration.GetConnectionString("DbConnect");
 
+
             builder.Services.AddSingleton<IStudentRepository>(new StudentRepository(connectionString));
             builder.Services.AddScoped<IStudentService, StudentService>();
+
+            builder.Services.AddSingleton<ICourseRepository>(new CourseRepository(connectionString));
+            builder.Services.AddScoped<ICourseService, CourseService>();
+
+
+            builder.Services.AddSingleton<IStudentRepository>(new StudentRepository(connectionString));
+            builder.Services.AddScoped<IStudentService, StudentService>();
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
