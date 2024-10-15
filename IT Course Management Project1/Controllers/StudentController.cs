@@ -1,4 +1,5 @@
 ﻿using IT_Course_Management_Project1.DTOs.RequestDtos;
+using IT_Course_Management_Project1.Entity;
 using IT_Course_Management_Project1.IServices;
 using IT_Course_Management_Project1.Services;
 using Microsoft.AspNetCore.Http;
@@ -11,84 +12,47 @@ namespace IT_Course_Management_Project1.Controllers
     public class StudentController : ControllerBase
     {
         private readonly IStudentService _studentService;
-        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public StudentController(IStudentService studentService, IWebHostEnvironment webHostEnvironment)
+        public StudentController(IStudentService studentService)
         {
-            _webHostEnvironment = webHostEnvironment;
             _studentService = studentService;
         }
 
-        // POST: api/student
-        [HttpPost]
-        public async Task<IActionResult> CreateStudent(StudentRequestDto studentRequest)
-        {
-            if (studentRequest == null)
-                return BadRequest("Invalid student data.");
-            else
-            {
-                try
-                {
-                    var data = await _studentService.AddStudent(studentRequest);
-                    return Ok(data);
-                }
-                catch (Exception ex)
-                {
-                    return BadRequest(ex.Message);
-                }
-            }
-
-        }
-
-        // GET: api/student/{id}
-        [HttpGet("Get Student by NIC")]
-        public async Task<IActionResult> GetStudentByNIC(string NIC)
-        {
-            var student = await _studentService.GetStudentByNIC(NIC);
-            return student != null ? Ok(student) : NotFound();
-        }
-
-        // GET: api/student
         [HttpGet]
-        public async Task<IActionResult> GetAllStudents()
+        public async Task<ActionResult<IEnumerable<Student>>> GetAllStudents()
         {
-            try
-            {
-                var students = await _studentService.GetAllStudents();
-                return Ok(students);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            
+            var students = await _studentService.GetAllStudentsAsync();
+            return Ok(students);
         }
 
-
-        // PUT: api/student/{id}
-        [HttpPut("edit student")]
-        public async Task<IActionResult> UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest)
+        [HttpGet("{nic}")]
+        public async Task<ActionResult<Student>> GetStudentByNic(string nic)
         {
-            if (studentRequest == null || NIC != null)
-            {
-                return BadRequest("Invalid student data.");
-            }
-
-            else
-            {
-                var data = await _studentService.UpdateStudent(NIC, studentRequest);
-                return Ok(data);
-
-            }
-
-
+            var student = await _studentService.GetStudentByNicAsync(nic);
+            if (student == null) return NotFound();
+            return Ok(student);
         }
 
-        // DELETE: api/student/{id}
-        [HttpDelete("Delete Student{id}")]
-        public async Task<IActionResult> DeleteStudent(string NIC)
+        [HttpPost]
+        public async Task<ActionResult<Student>> AddStudent([FromBody] Student student)
         {
-            await _studentService.DeleteStudents(NIC);
+            var addedStudent = await _studentService.AddStudentAsync(student);
+            return CreatedAtAction(nameof(GetStudentByNic), new { nic = addedStudent.Nic }, addedStudent);
+        }
+
+        [HttpPut("{nic}")]
+        public async Task<ActionResult> UpdateStudent(string nic, [FromBody] Student student)
+        {
+            var result = await _studentService.UpdateStudentAsync(nic, student);
+            if (result == 0) return NotFound();
+            return NoContent();
+        }
+
+        [HttpDelete("{nic}")]
+        public async Task<ActionResult> DeleteStudent(string nic)
+        {
+            var result = await _studentService.DeleteStudentAsync(nic);
+            if (result == 0) return NotFound();
             return NoContent();
         }
     }

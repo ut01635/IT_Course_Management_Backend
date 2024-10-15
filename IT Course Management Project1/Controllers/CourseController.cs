@@ -20,25 +20,25 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
 
-        // POST: api/course
-        [HttpPost]
-        public async Task<IActionResult> CreateCourse(CourseRequestDTO courseRequest)
-        {
-            if (courseRequest == null)
-                return BadRequest("Invalid course data.");
-            else
-            {
-                try
-                {
-                    var data = await _courseService.AddCourse(courseRequest);
-                    return Ok(data);
-                }
-                catch (Exception ex)
-                {
-                    return BadRequest(ex.Message);
-                }
-            }
+        //// POST: api/course
+        //[HttpPost]
+        //public async Task<IActionResult> CreateCourse(CourseRequestDTO courseRequest)
+        //{
+        //    if (courseRequest == null)
+        //        return BadRequest("Invalid course data.");
+        //    else
+        //    {
+        //        try
+        //        {
+        //            var data = await _courseService.AddCourse(courseRequest);
+        //            return Ok(data);
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            return BadRequest(ex.Message);
+        //        }
+        //    }
 
-        }
+        //}
     }
 }

@@ -1,12 +1,8 @@
-﻿
+﻿using IT_Course_Management_Project1.Entity;
 
-using IT_Course_Management_Project1.DTOs.RequestDtos;
-using IT_Course_Management_Project1.DTOs.ResponseDtos;
-using IT_Course_Management_Project1.Entity;
-
-namespace IT_Course_Management_Project1.IServices
+namespace IT_Course_Management_Project1.IRepository
 {
-    public interface IStudentService
+    public interface IStudentRepository
     {
         Task<Student> AddStudentAsync(Student student);
         Task<IEnumerable<Student>> GetAllStudentsAsync();

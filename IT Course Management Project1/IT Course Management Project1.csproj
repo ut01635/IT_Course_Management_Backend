@@ -14,9 +14,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="IRepository\" />
     <Folder Include="IServices\" />
-    <Folder Include="Repositories\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
