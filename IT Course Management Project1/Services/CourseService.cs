@@ -18,32 +18,11 @@ namespace IT_Course_Management_Project1.Services
 
 
 
-        public async Task<CourseResponsDTO> AddCourse(CourseRequestDTO courseRequest)
+        public async Task<Course> AddCourseAsync(Course course)
         {
-           
-
-            // Create a new course object
-            var course = new Course
-            {
-                CourseName = courseRequest.CourseName,
-                Level = courseRequest.Level,
-                TotalFee = courseRequest.TotalFee,
-                Duration = courseRequest.Duration,
-   
-            };
-
-            // Add the course to the repository
-            await _courseRepository.AddCourse(course);
-
-            // Create and return the response DTO
-            var response = new CourseResponsDTO
-            {
-                Id = course.Id,
-                Level = course.Level,
-                TotalFee = course.TotalFee,
-                Duration = course.Duration,
-            };
-            return response;
+            return await _courseRepository.AddCourseAsync(course);
         }
+
+
     }
 }
