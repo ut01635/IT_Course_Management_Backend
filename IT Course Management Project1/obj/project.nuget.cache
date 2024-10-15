@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dq0V4jOLhMk=",
+  "dgSpecHash": "pf0FXd2sKjs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\UT01635\\Documents\\GitHub\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+  "projectFilePath": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UT01635\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\UT01635\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

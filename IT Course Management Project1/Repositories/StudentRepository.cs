@@ -105,7 +105,7 @@ namespace IT_Course_Management_Project1.Repositories
         }
 
         // Update student
-        public async Task<int> UpdateStudentAsync(string nic, Student student)
+        public async Task<Student> UpdateStudentAsync(string nic, Student student)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -130,7 +130,8 @@ namespace IT_Course_Management_Project1.Repositories
                 command.Parameters.AddWithValue("@registrationFee", student.RegistrationFee);
                 command.Parameters.AddWithValue("@imagePath", student.ImagePath ?? (object)DBNull.Value);
 
-                return await command.ExecuteNonQueryAsync();
+                await command.ExecuteNonQueryAsync();
+                return student;
             }
         }
 

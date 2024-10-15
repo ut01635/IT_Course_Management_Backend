@@ -7,7 +7,7 @@ namespace IT_Course_Management_Project1.IRepository
         Task<Student> AddStudentAsync(Student student);
         Task<IEnumerable<Student>> GetAllStudentsAsync();
         Task<Student> GetStudentByNicAsync(string nic);
-        Task<int> UpdateStudentAsync(string nic, Student student);
+        Task<Student> UpdateStudentAsync(string nic, Student student);
         Task<int> DeleteStudentAsync(string nic);
     }
 }
