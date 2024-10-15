@@ -18,14 +18,13 @@ namespace IT_Course_Management_Project1
             DatabaseInitializer database = new DatabaseInitializer();
             database.InitializeDatabase();
             database.CreateTable();
-            database.InserSampleData();
+            //database.InserSampleData();
 
             // Add services to the container.
             // var connectionString = builder.Configuration.GetConnectionString("DbConnect");
 
 
-            builder.Services.AddSingleton<IStudentRepository>(new StudentRepository(connectionString));
-            builder.Services.AddScoped<IStudentService, StudentService>();
+           
 
             builder.Services.AddSingleton<ICourseRepository>(new CourseRepository(connectionString));
             builder.Services.AddScoped<ICourseService, CourseService>();
