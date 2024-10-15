@@ -35,10 +35,10 @@
                 }
                 catch (Exception ex)
                 {
-                    return BadRequest(ex.Message); 
+                    return BadRequest(ex.Message);
                 }
             }
-            
+
         }
 =======
 //        // POST: api/student
@@ -76,18 +76,36 @@
         [HttpGet]
         public async Task<IActionResult> GetAllStudents()
         {
-            var students = await _studentService.GetAllStudents();
-            return Ok(students);
+            try
+            {
+                var students = await _studentService.GetAllStudents();
+                return Ok(students);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
         }
+
+
         // PUT: api/student/{id}
         [HttpPut("edit student")]
         public async Task<IActionResult> UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest)
         {
-            if (studentRequest == null || NIC == null)
+            if (studentRequest == null || NIC != null)
+            {
                 return BadRequest("Invalid student data.");
+            }
 
-            await _studentService.UpdateStudent(NIC, studentRequest);
-            return NoContent();
+            else
+            {
+                var data = await _studentService.UpdateStudent(NIC, studentRequest);
+                return Ok(data);
+
+            }
+
+
         }
 =======
 //        // GET: api/student

@@ -10,7 +10,7 @@ namespace IT_Course_Management_Project1.IServices
         Task<StudentResponseDto> GetStudentByNIC(string NIC);
         Task<List<StudentResponseDto>> GetAllStudents();
         Task<StudentResponseDto> AddStudent(StudentRequestDto studentRequest);
-        Task UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest);
+        Task<StudentResponseDto> UpdateStudent(string NIC, StudentUpdateRequestDTO studentRequest);
         Task DeleteStudents(string NIC);
     }
 }
