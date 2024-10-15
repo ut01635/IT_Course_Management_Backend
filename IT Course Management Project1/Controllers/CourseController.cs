@@ -60,6 +60,16 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
 
+        [HttpGet("GetAllCourses")]
+        public async Task<IActionResult> GetAllCourses()
+        {
+            var courses = await _courseService.GetAllCoursesAsync();
+            return Ok(courses);
+        }
+
+
+
+
 
 
     }

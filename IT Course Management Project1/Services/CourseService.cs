@@ -18,8 +18,13 @@ namespace IT_Course_Management_Project1.Services
 
         public async Task<Course> AddCourseAsync(Course course)
         {
-            // You can add any additional business logic or validations here before adding the course
+
             return await _courseRepository.AddCourseAsync(course);
+        }
+
+        public async Task<IEnumerable<Course>> GetAllCoursesAsync()
+        {
+            return await _courseRepository.GetAllCoursesAsync();
         }
     }
 }
