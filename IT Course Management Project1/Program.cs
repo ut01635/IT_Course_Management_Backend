@@ -35,6 +35,9 @@ namespace IT_Course_Management_Project1
             builder.Services.AddSingleton<IEnrollmentRepository>(new EnrollmentRepository(connectionString));
             builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 
+            builder.Services.AddSingleton<IPaymentRepository>(new PaymentRepository(connectionString));
+            builder.Services.AddScoped<IPaymentService, PaymentService>();
+
 
 
 

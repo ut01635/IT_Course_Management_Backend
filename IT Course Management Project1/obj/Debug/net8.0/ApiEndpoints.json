@@ -1,15 +1,252 @@
 [
   {
-    "ContainingType": "IT_Course_Management_Project1.Controllers.StudentController",
-    "Method": "CreateStudent",
-    "RelativePath": "api/Student",
+    "ContainingType": "IT_Course_Management_Project1.Controllers.CourseController",
+    "Method": "AddCourse",
+    "RelativePath": "api/Course",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "studentRequest",
-        "Type": "IT_Course_Management_Project1.DTOs.RequestDtos.StudentRequestDto",
+        "Name": "courseDto",
+        "Type": "IT_Course_Management_Project1.DTOs.RequestDtos.CourseRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.CourseController",
+    "Method": "GetCourseById",
+    "RelativePath": "api/Course/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.CourseController",
+    "Method": "UpdateCourse",
+    "RelativePath": "api/Course/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "course",
+        "Type": "IT_Course_Management_Project1.Entity.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.CourseController",
+    "Method": "DeleteCourse",
+    "RelativePath": "api/Course/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.CourseController",
+    "Method": "GetAllCourses",
+    "RelativePath": "api/Course/GetAllCourses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.EnrollmentController",
+    "Method": "AddEnrollment",
+    "RelativePath": "api/Enrollment/Create-Enrollment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enrollment",
+        "Type": "IT_Course_Management_Project1.Entity.Enrollment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.EnrollmentController",
+    "Method": "DeleteEnrollment",
+    "RelativePath": "api/Enrollment/Delete-Enrollment{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.EnrollmentController",
+    "Method": "UpdateEnrollment",
+    "RelativePath": "api/Enrollment/Edit-Enrollment{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "enrollment",
+        "Type": "IT_Course_Management_Project1.Entity.Enrollment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.EnrollmentController",
+    "Method": "GetAllEnrollments",
+    "RelativePath": "api/Enrollment/Get-all-enrollmetnt",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.EnrollmentController",
+    "Method": "GetEnrollmentById",
+    "RelativePath": "api/Enrollment/Get-enrollmetnt-By{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.PaymentController",
+    "Method": "GetAllPayments",
+    "RelativePath": "api/Payment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.PaymentController",
+    "Method": "AddPayment",
+    "RelativePath": "api/Payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payment",
+        "Type": "IT_Course_Management_Project1.Entity.Payment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.PaymentController",
+    "Method": "GetPaymentById",
+    "RelativePath": "api/Payment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.PaymentController",
+    "Method": "UpdatePayment",
+    "RelativePath": "api/Payment/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "payment",
+        "Type": "IT_Course_Management_Project1.Entity.Payment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.PaymentController",
+    "Method": "DeletePayment",
+    "RelativePath": "api/Payment/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.PaymentController",
+    "Method": "GetPaymentsByEnrollmentId",
+    "RelativePath": "api/Payment/enrollment/{enrollmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enrollmentId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -23,62 +260,103 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[IT_Course_Management_Project1.Entity.Student, IT Course Management Project1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "IT_Course_Management_Project1.Controllers.StudentController",
-    "Method": "DeleteStudent",
-    "RelativePath": "api/Student/{id}",
-    "HttpMethod": "DELETE",
+    "Method": "AddStudent",
+    "RelativePath": "api/Student",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "NIC",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "id",
-        "Type": "",
+        "Name": "student",
+        "Type": "IT_Course_Management_Project1.Entity.Student",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IT_Course_Management_Project1.Controllers.StudentController",
-    "Method": "UpdateStudent",
-    "RelativePath": "api/Student/edit student",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "NIC",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "studentRequest",
-        "Type": "IT_Course_Management_Project1.DTOs.RequestDtos.StudentRequestDto",
-        "IsRequired": true
+        "Type": "IT_Course_Management_Project1.Entity.Student",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
       }
-    ],
-    "ReturnTypes": []
+    ]
   },
   {
     "ContainingType": "IT_Course_Management_Project1.Controllers.StudentController",
-    "Method": "GetStudentByNIC",
-    "RelativePath": "api/Student/Get Student by NIC",
+    "Method": "GetStudentByNic",
+    "RelativePath": "api/Student/{nic}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "NIC",
+        "Name": "nic",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "IT_Course_Management_Project1.Entity.Student",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.StudentController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/Student/{nic}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nic",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "student",
+        "Type": "IT_Course_Management_Project1.Entity.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IT_Course_Management_Project1.Controllers.StudentController",
+    "Method": "DeleteStudent",
+    "RelativePath": "api/Student/{nic}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nic",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
