@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|z:\\other activity\\m2 project\\it_course_management_backend\\it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|z:\\other activity\\m2 project\\it_course_management_backend\\it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Program.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Program.cs",
+              "ToolTip": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Program.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Program.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAuwEUAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T09:29:48.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\StudentController.cs",
+              "ToolTip": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T08:59:43.817Z"
             }
           ]
         }
