@@ -55,5 +55,10 @@ namespace IT_Course_Management_Project1.Services
         {
             return await _enrollmentRepository.GetEnrollmentsByNicAsync(nic);
         }
+
+        public async Task<IEnumerable<Enrollment>> GetEnrollmentsByCourseIdAsync(int courseId)
+        {
+            return await _enrollmentRepository.GetEnrollmentsByCourseIdAsync(courseId);
+        }
     }
 }

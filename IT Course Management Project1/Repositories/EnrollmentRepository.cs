@@ -173,5 +173,41 @@ namespace IT_Course_Management_Project1.Repositories
 
 
 
+        public async Task<IEnumerable<Enrollment>> GetEnrollmentsByCourseIdAsync(int courseId)
+        {
+            var enrollments = new List<Enrollment>();
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM Enrollment WHERE CourseId = @courseId";
+                command.Parameters.AddWithValue("@courseId", courseId);
+
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+                        enrollments.Add(new Enrollment
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                            StudentNIC = reader.GetString(reader.GetOrdinal("NIC")),
+                            CourseId = reader.GetInt32(reader.GetOrdinal("CourseId")),
+                            EnrollmentDate = reader.GetDateTime(reader.GetOrdinal("EnrollmentDate")),
+                            PaymentPlan = reader.GetString(reader.GetOrdinal("PaymentPlan")),
+                            Status = reader.GetString(reader.GetOrdinal("Status"))
+                        });
+                    }
+                }
+            }
+
+            return enrollments;
+        }
+
+
+
+
+
+
     }
 }

@@ -88,5 +88,18 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
 
+        [HttpGet("by-course-id/{courseId}")]
+        public async Task<IActionResult> GetEnrollmentsByCourseId(int courseId)
+        {
+            var enrollments = await _enrollmentService.GetEnrollmentsByCourseIdAsync(courseId);
+            if (enrollments == null || !enrollments.Any())
+            {
+                return NotFound($"No enrollments found for Course ID: {courseId}");
+            }
+            return Ok(enrollments);
+        }
+
+
+
     }
 }
