@@ -59,5 +59,33 @@ namespace IT_Course_Management_Project1.Repositories
             }
             return notification;
         }
+
+
+        public async Task<IEnumerable<Notification>> GetAllAsync()
+        {
+            var notifications = new List<Notification>();
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var query = "SELECT * FROM Notification";
+                using (var command = new SqlCommand(query, connection))
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+                        notifications.Add(new Notification
+                        {
+                            Id = (int)reader["Id"],
+                            Message = (string)reader["Message"],
+                            StudentNIC = (string)reader["NIC"],
+                            Date = (DateTime)reader["Date"]
+                        });
+                    }
+                }
+            }
+            return notifications;
+        }
+
+
     }
 }

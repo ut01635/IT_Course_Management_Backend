@@ -22,5 +22,12 @@ namespace IT_Course_Management_Project1.Services
         {
             return await _notificationRepository.GetByIdAsync(id);
         }
+
+        public async Task<IEnumerable<Notification>> GetAllNotificationsAsync()
+        {
+            return await _notificationRepository.GetAllAsync();
+        }
+
+
     }
 }

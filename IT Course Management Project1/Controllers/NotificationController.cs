@@ -46,5 +46,22 @@ namespace IT_Course_Management_Project1.Controllers
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
+
+        [HttpGet("GetAllNotifications")]
+        public async Task<IActionResult> GetAllNotifications()
+        {
+            try
+            {
+                var notifications = await _notificationService.GetAllNotificationsAsync();
+                return Ok(notifications);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+
     }
 }

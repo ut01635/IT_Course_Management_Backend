@@ -6,5 +6,7 @@ namespace IT_Course_Management_Project1.IServices
     {
         Task AddNotificationAsync(Notification notification);
         Task<Notification> GetNotificationByIdAsync(int id);
+
+        Task<IEnumerable<Notification>> GetAllNotificationsAsync();
     }
 }

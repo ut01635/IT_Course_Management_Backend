@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\entity\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\entity\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\iservices\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,6 +17,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\entity\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\entity\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone project\\mile 2\\it_course_management_backend\\it course management project1\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,11 +126,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Notification.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Notification.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Notification.cs",
@@ -138,8 +138,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Entity\\Notification.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T04:09:35.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T04:09:35.599Z"
             },
             {
               "$type": "Document",
@@ -149,14 +148,14 @@
               "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\NotificationRepository.cs",
               "ToolTip": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\NotificationRepository.cs",
               "RelativeToolTip": "IT Course Management Project1\\Repositories\\NotificationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T17:38:18.323Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "NotificationService.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\NotificationService.cs",
@@ -169,46 +168,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "DatabaseInitializer.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
               "ToolTip": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
               "RelativeToolTip": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "ViewState": "AQIAALgAAAAAAAAAAAAcwM8AAABPAAAA",
+              "ViewState": "AQIAAOgAAAAAAAAAAAAcwM8AAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T11:11:01.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "INotificationRepository.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\INotificationRepository.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\INotificationRepository.cs",
               "ToolTip": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\INotificationRepository.cs",
               "RelativeToolTip": "IT Course Management Project1\\IRepository\\INotificationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T17:37:49.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "INotificationService.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\INotificationService.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\INotificationService.cs",
               "ToolTip": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\INotificationService.cs",
               "RelativeToolTip": "IT Course Management Project1\\IServices\\INotificationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAA8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T17:43:32.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Program.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Program.cs",
@@ -216,12 +215,11 @@
               "RelativeToolTip": "IT Course Management Project1\\Program.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:57:31.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T10:57:31.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Enrollment.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Enrollment.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Enrollment.cs",
@@ -229,18 +227,17 @@
               "RelativeToolTip": "IT Course Management Project1\\Entity\\Enrollment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:04:37.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T11:04:37.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "NotificationController.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\NotificationController.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\NotificationController.cs",
               "ToolTip": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\NotificationController.cs",
               "RelativeToolTip": "IT Course Management Project1\\Controllers\\NotificationController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAACCAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowC8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T04:18:24.231Z",
               "EditorCaption": ""
@@ -255,8 +252,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Repositories\\PaymentRepository.cs",
               "ViewState": "AQIAAMQAAAAAAAAAAAAUwOoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:38:43.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:38:43.793Z"
             },
             {
               "$type": "Document",
@@ -268,8 +264,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Entity\\Student.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:49:47.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:49:47.26Z"
             },
             {
               "$type": "Document",
@@ -281,8 +276,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Repositories\\EnrollmentRepository.cs",
               "ViewState": "AQIAAGkAAAAAAAAAAAAUwI8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:49:54.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T10:49:54.488Z"
             },
             {
               "$type": "Document",
@@ -294,8 +288,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Entity\\Course.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:49:37.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:49:37.38Z"
             },
             {
               "$type": "Document",
@@ -307,8 +300,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Database\\AppDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:50:06.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:50:06.298Z"
             },
             {
               "$type": "Document",
@@ -320,8 +312,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Services\\PaymentService.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAswFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:44:30.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:44:30.802Z"
             },
             {
               "$type": "Document",
@@ -333,8 +324,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Services\\EnrollmentService.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAkwDYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:51:33.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T10:51:33.407Z"
             },
             {
               "$type": "Document",
@@ -346,8 +336,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Services\\ContactUsService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:42:51.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:42:51.053Z"
             },
             {
               "$type": "Document",
@@ -359,8 +348,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Repositories\\ContactUsRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:35:26.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:35:26.376Z"
             },
             {
               "$type": "Document",
@@ -372,8 +360,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Entity\\Payment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:50:46.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:50:46.49Z"
             },
             {
               "$type": "Document",
@@ -385,8 +372,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Entity\\ContactUs.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:49:34.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T17:49:34.786Z"
             },
             {
               "$type": "Document",
@@ -398,8 +384,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Controllers\\StudentController.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAkwD0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:45:11.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T03:45:11.244Z"
             },
             {
               "$type": "Document",
@@ -411,8 +396,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Controllers\\PaymentController.cs",
               "ViewState": "AQIAAEYAAAAAAAAAAADwv2sAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T18:12:13.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T18:12:13.519Z"
             },
             {
               "$type": "Document",
@@ -424,8 +408,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Controllers\\EnrollmentController.cs",
               "ViewState": "AQIAACkAAAAAAAAAAADwv04AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:52:39.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T10:52:39.517Z"
             },
             {
               "$type": "Document",
