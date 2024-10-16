@@ -1,6 +1,26 @@
-﻿namespace IT_Course_Management_Project1.Services
+﻿using IT_Course_Management_Project1.Entity;
+using IT_Course_Management_Project1.IRepository;
+using IT_Course_Management_Project1.IServices;
+
+namespace IT_Course_Management_Project1.Services
 {
-    public class NotificationService
+    public class NotificationService : INotificationService
     {
+        private readonly INotificationRepository _notificationRepository;
+
+        public NotificationService(INotificationRepository notificationRepository)
+        {
+            _notificationRepository = notificationRepository;
+        }
+
+        public async Task AddNotificationAsync(Notification notification)
+        {
+            await _notificationRepository.AddAsync(notification);
+        }
+
+        public async Task<Notification> GetNotificationByIdAsync(int id)
+        {
+            return await _notificationRepository.GetByIdAsync(id);
+        }
     }
 }

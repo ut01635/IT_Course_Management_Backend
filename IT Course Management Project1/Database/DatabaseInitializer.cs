@@ -182,6 +182,15 @@ namespace IT_Course_Management_Project1.Database
             INSERT INTO Course (CourseName, Level, Duration, Fees, ImagePath)
             SELECT @CourseName2, @Level2, @Duration2, @Fees2, @ImagePathCourse2
             WHERE NOT EXISTS (SELECT 1 FROM Course WHERE CourseName = @CourseName2);
+             
+             -- Insert sample data into Notification table if it does not exist
+             INSERT INTO Notification (Message, NIC, Date)
+             SELECT @Message1, @NICNO1, @Date1
+             WHERE NOT EXISTS (SELECT 1 FROM Notification WHERE Message = @Message1);
+
+            INSERT INTO Notification (Message, NIC, Date)
+            SELECT @Message2, @NICNO2, @Date2
+            WHERE NOT EXISTS (SELECT 1 FROM Notification WHERE Message = @Message2);
 
             -- Additional inserts for other tables can be added here
 
@@ -226,6 +235,16 @@ namespace IT_Course_Management_Project1.Database
                         command.Parameters.AddWithValue("@Duration2", "6 months");
                         command.Parameters.AddWithValue("@Fees2", 400);
                         command.Parameters.AddWithValue("@ImagePathCourse2", @"C:\Images\course2.jpg");
+
+                        // Parameters for first notification
+                        command.Parameters.AddWithValue("@Message1", "Welcome to the Institute Management System!");
+                        command.Parameters.AddWithValue("@NICNO1", "1234567890123");
+                        command.Parameters.AddWithValue("@Date1", DateTime.Now);
+
+                        // Parameters for second notification
+                        command.Parameters.AddWithValue("@Message2", "Your registration is successful.");
+                        command.Parameters.AddWithValue("@NICNO2", "9876543210987");
+                        command.Parameters.AddWithValue("@Date2", DateTime.Now);
 
                         // Execute the command
                         command.ExecuteNonQuery();

@@ -38,6 +38,9 @@ namespace IT_Course_Management_Project1
             builder.Services.AddSingleton<IPaymentRepository>(new PaymentRepository(connectionString));
             builder.Services.AddScoped<IPaymentService, PaymentService>();
 
+            builder.Services.AddSingleton<INotificationRepository>(new NotificationRepository(connectionString));
+            builder.Services.AddScoped<INotificationService, NotificationService>();
+
 
 
 

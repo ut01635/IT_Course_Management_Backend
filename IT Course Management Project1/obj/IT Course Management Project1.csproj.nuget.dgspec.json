@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj": {}
+    "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj": {}
   },
   "projects": {
-    "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj": {
+    "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+        "projectUniqueName": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
         "projectName": "IT Course Management Project1",
-        "projectPath": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
-        "packagesPath": "C:\\Users\\Imthath\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\obj\\",
+        "projectPath": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+        "packagesPath": "C:\\Users\\UT01228\\.nuget\\packages\\",
+        "outputPath": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Imthath\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UT01228\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
