@@ -8,5 +8,7 @@ namespace IT_Course_Management_Project1.IRepository
         Task<Notification> GetByIdAsync(int id);
 
         Task<IEnumerable<Notification>> GetAllAsync();
+
+        Task DeleteAsync(int id);
     }
 }

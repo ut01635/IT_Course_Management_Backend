@@ -87,5 +87,20 @@ namespace IT_Course_Management_Project1.Repositories
         }
 
 
+        public async Task DeleteAsync(int id)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var query = "DELETE FROM Notification WHERE Id = @Id";
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", id);
+                    await command.ExecuteNonQueryAsync();
+                }
+            }
+        }
+
+
     }
 }

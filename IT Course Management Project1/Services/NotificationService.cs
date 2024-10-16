@@ -29,5 +29,11 @@ namespace IT_Course_Management_Project1.Services
         }
 
 
+        public async Task DeleteNotificationAsync(int id)
+        {
+            await _notificationRepository.DeleteAsync(id);
+        }
+
+
     }
 }
