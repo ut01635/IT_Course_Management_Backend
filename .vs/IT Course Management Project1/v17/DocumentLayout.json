@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\ContactUsController.cs",
               "ToolTip": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\ContactUsController.cs",
               "RelativeToolTip": "IT Course Management Project1\\Controllers\\ContactUsController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAADwvz0AAAAFAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAmwD0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T05:27:59.649Z",
               "EditorCaption": ""
@@ -71,8 +71,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Services\\ContactUsService.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAA5wCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:27:13.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T05:27:13.152Z"
             },
             {
               "$type": "Document",
@@ -84,8 +83,7 @@
               "RelativeToolTip": "IT Course Management Project1\\IServices\\IContactUsService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:26:45.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T05:26:45.161Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "IT Course Management Project1\\IRepository\\IContactUsRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:26:26.363Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T05:26:26.363Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Repositories\\ContactUsRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:25:40.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T05:25:40.617Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
               "ViewState": "AQIAAGIAAAAAAAAAAAAIwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:19:39.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T05:19:39.571Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Entity\\ContactUs.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:19:15.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T05:19:15.986Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "IT Course Management Project1\\Entity\\Enrollment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T05:08:01.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T05:08:01.123Z"
             }
           ]
         }
