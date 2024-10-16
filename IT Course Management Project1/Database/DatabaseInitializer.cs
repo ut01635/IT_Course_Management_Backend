@@ -1,4 +1,6 @@
-﻿using Microsoft.Data.SqlClient;
+﻿
+
+using System.Data.SqlClient;
 
 namespace IT_Course_Management_Project1.Database
 {

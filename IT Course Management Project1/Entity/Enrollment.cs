@@ -17,9 +17,5 @@ namespace IT_Course_Management_Project1.Entity
         public DateTime EnrollmentDate { get; set; }
         public string PaymentPlan { get; set; }
         public string Status { get; set; }
-
-        // Navigation properties
-        public virtual Student Student { get; set; }
-        public virtual Course Course { get; set; }
     }
 }
