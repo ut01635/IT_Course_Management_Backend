@@ -9,6 +9,7 @@ namespace IT_Course_Management_Project1.IServices
         void UpdateContact(ContactUs contactUs);
         void RemoveContact(int id);
         List<ContactUs> RetrieveContactsByDate(DateTime date);
+
     }
 
 }

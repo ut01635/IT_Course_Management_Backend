@@ -19,6 +19,8 @@ namespace IT_Course_Management_Project1.Controllers
         [HttpPost]
         public ActionResult<ContactUs> CreateContact([FromBody] ContactUs contactUs)
         {
+            if (contactUs == null) return BadRequest("Contact details are required.");
+
             var createdContact = _contactUsService.CreateContact(contactUs);
             return CreatedAtAction(nameof(GetContactById), new { id = createdContact.Id }, createdContact);
         }
@@ -59,5 +61,7 @@ namespace IT_Course_Management_Project1.Controllers
             var contacts = _contactUsService.RetrieveContactsByDate(date);
             return Ok(contacts);
         }
+
+
     }
 }
