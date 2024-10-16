@@ -417,3 +417,9 @@ Z:\other activity\M2 Project\IT_Course_Management_Backend\IT Course Management P
 Z:\other activity\M2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
 Z:\other activity\M2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 Z:\other activity\M2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+X:\Piragash (Actitivity)\Milestone Project\Mile 2\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\System.Data.SqlClient.dll
+X:\Piragash (Actitivity)\Milestone Project\Mile 2\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+X:\Piragash (Actitivity)\Milestone Project\Mile 2\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+X:\Piragash (Actitivity)\Milestone Project\Mile 2\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+X:\Piragash (Actitivity)\Milestone Project\Mile 2\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+X:\Piragash (Actitivity)\Milestone Project\Mile 2\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

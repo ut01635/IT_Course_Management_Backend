@@ -7,8 +7,24 @@
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|z:\\other activity\\m2 project\\it_course_management_backend\\it course management project1\\controllers\\contactuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\contactuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|z:\\other activity\\m2 project\\it_course_management_backend\\it course management project1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|z:\\other activity\\m2 project\\it_course_management_backend\\it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|z:\\other activity\\m2 project\\it_course_management_backend\\it course management project1\\iservices\\istudentservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\istudentservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|z:\\other activity\\m2 project\\it_course_management_backend\\it course management project1\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +34,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\AdminController.cs",
+              "ToolTip": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:12:22.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IStudentService .cs",
+              "DocumentMoniker": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IStudentService .cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IStudentService .cs",
+              "ToolTip": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IStudentService .cs",
+              "RelativeToolTip": "IT Course Management Project1\\IServices\\IStudentService .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:12:10.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactUsController.cs",
+              "DocumentMoniker": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\ContactUsController.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\ContactUsController.cs",
+              "ToolTip": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\ContactUsController.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Controllers\\ContactUsController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:11:59.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IAdminService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IAdminService.cs",
+              "ToolTip": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IAdminService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IServices\\IAdminService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:11:57.191Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -39,15 +107,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "StudentController.cs",
               "DocumentMoniker": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\StudentController.cs",
               "ToolTip": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
               "RelativeToolTip": "IT Course Management Project1\\Controllers\\StudentController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAjAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwDIAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T08:59:43.817Z"
+              "WhenOpened": "2024-10-16T08:59:43.817Z",
+              "EditorCaption": ""
             }
           ]
         }

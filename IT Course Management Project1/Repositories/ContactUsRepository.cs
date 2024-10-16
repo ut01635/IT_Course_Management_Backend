@@ -20,17 +20,21 @@ namespace IT_Course_Management_Project1.Repositories
 
         public ContactUs AddContactUsDetails(ContactUs contactUs)
         {
-            using (var connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = "INSERT INTO ContactUS (Id, Name, Email, Message, SubmitDate) VALUES (@id, @name, @email, @message, @submitDate);";
-                command.Parameters.AddWithValue("@id", contactUs.Id);
-                command.Parameters.AddWithValue("@name", contactUs.Name);
-                command.Parameters.AddWithValue("@email", contactUs.Email);
-                command.Parameters.AddWithValue("@message", contactUs.Message);
-                command.Parameters.AddWithValue("@submitDate", contactUs.SubmitDate);
-                command.ExecuteNonQuery();
+                string query = "INSERT INTO ContactUs (Name, Email, Message, SubmitDate) VALUES (@Name, @Email, @Message, @SubmitDate); SELECT SCOPE_IDENTITY();";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Name", contactUs.Name);
+                    command.Parameters.AddWithValue("@Email", contactUs.Email);
+                    command.Parameters.AddWithValue("@Message", contactUs.Message);
+                    command.Parameters.AddWithValue("@SubmitDate", DateTime.Now);
+
+                    var result = command.ExecuteScalar();
+                    contactUs.Id = Convert.ToInt32(result);
+                }
             }
             return contactUs;
         }
@@ -39,23 +43,23 @@ namespace IT_Course_Management_Project1.Repositories
         {
             var contacts = new List<ContactUs>();
 
-            using (var connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = "SELECT Id, Name, Email, Message, SubmitDate FROM ContactUS;";
+                string query = "SELECT * FROM ContactUs";
 
-                using (var reader = command.ExecuteReader())
+                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
                         var contact = new ContactUs
                         {
-                            Id = reader.GetInt32(0),
-                            Name = reader.GetString(1),
-                            Email = reader.GetString(2),
-                            Message = reader.GetString(3),
-                            SubmitDate = reader.GetDateTime(4)
+                            Id = (int)reader["Id"],
+                            Name = reader["Name"].ToString(),
+                            Email = reader["Email"].ToString(),
+                            Message = reader["Message"].ToString(),
+                            SubmitDate = (DateTime)reader["SubmitDate"]
                         };
                         contacts.Add(contact);
                     }
@@ -67,29 +71,34 @@ namespace IT_Course_Management_Project1.Repositories
 
         public void EditContactUsDetails(ContactUs contactUs)
         {
-            using (var connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = "UPDATE ContactUS SET Name = @name, Email = @email, Message = @message, SubmitDate = @submitDate WHERE Id = @id;";
-                command.Parameters.AddWithValue("@id", contactUs.Id);
-                command.Parameters.AddWithValue("@name", contactUs.Name);
-                command.Parameters.AddWithValue("@email", contactUs.Email);
-                command.Parameters.AddWithValue("@message", contactUs.Message);
-                command.Parameters.AddWithValue("@submitDate", contactUs.SubmitDate);
-                command.ExecuteNonQuery();
+                string query = "UPDATE ContactUs SET Name = @Name, Email = @Email, Message = @Message WHERE Id = @Id";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", contactUs.Id);
+                    command.Parameters.AddWithValue("@Name", contactUs.Name);
+                    command.Parameters.AddWithValue("@Email", contactUs.Email);
+                    command.Parameters.AddWithValue("@Message", contactUs.Message);
+                    command.ExecuteNonQuery();
+                }
             }
         }
 
         public void DeleteContactUsDetails(int id)
         {
-            using (var connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = "DELETE FROM ContactUS WHERE Id = @id;";
-                command.Parameters.AddWithValue("@id", id);
-                command.ExecuteNonQuery();
+                string query = "DELETE FROM ContactUs WHERE Id = @Id";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", id);
+                    command.ExecuteNonQuery();
+                }
             }
         }
 
@@ -97,32 +106,36 @@ namespace IT_Course_Management_Project1.Repositories
         {
             var contacts = new List<ContactUs>();
 
-            using (var connection = new SqlConnection(_connectionString))
+            using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = "SELECT Id, Name, Email, Message, SubmitDate FROM ContactUS WHERE CAST(SubmitDate AS DATE) = @date;";
-                command.Parameters.AddWithValue("@date", date.Date);
+                string query = "SELECT * FROM ContactUs WHERE CAST(SubmitDate AS DATE) = @Date";
 
-                using (var reader = command.ExecuteReader())
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    while (reader.Read())
+                    command.Parameters.AddWithValue("@Date", date);
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        var contact = new ContactUs
+                        while (reader.Read())
                         {
-                            Id = reader.GetInt32(0),
-                            Name = reader.GetString(1),
-                            Email = reader.GetString(2),
-                            Message = reader.GetString(3),
-                            SubmitDate = reader.GetDateTime(4)
-                        };
-                        contacts.Add(contact);
+                            var contact = new ContactUs
+                            {
+                                Id = (int)reader["Id"],
+                                Name = reader["Name"].ToString(),
+                                Email = reader["Email"].ToString(),
+                                Message = reader["Message"].ToString(),
+                                SubmitDate = (DateTime)reader["SubmitDate"]
+                            };
+                            contacts.Add(contact);
+                        }
                     }
                 }
             }
 
             return contacts;
         }
+
+
     }
 
 }

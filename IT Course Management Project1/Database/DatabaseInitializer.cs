@@ -127,7 +127,7 @@ namespace IT_Course_Management_Project1.Database
                     Name NVARCHAR(200) NOT NULL,
                     Email NVARCHAR(100) NOT NULL,
                     Message NVARCHAR(MAX) NOT NULL,
-                    Date DATETIME NOT NULL
+                    SubmitDate DATETIME NOT NULL
                 );
             END;
 
@@ -194,6 +194,42 @@ namespace IT_Course_Management_Project1.Database
             SELECT @Message2, @NICNO2, @Date2
             WHERE NOT EXISTS (SELECT 1 FROM Notification WHERE Message = @Message2);
 
+             -- Insert sample data into Enrollment table if it does not exist
+            INSERT INTO Enrollment (NIC, CourseId, EnrollmentDate, PaymentPlan, Status)
+            SELECT @EnrollmentNIC1, @EnrollmentCourseId1, @EnrollmentDate1, @PaymentPlan1, @Status1
+            WHERE NOT EXISTS (SELECT 1 FROM Enrollment WHERE NIC = @EnrollmentNIC1 AND CourseId = @EnrollmentCourseId1);
+
+            INSERT INTO Enrollment (NIC, CourseId, EnrollmentDate, PaymentPlan, Status)
+            SELECT @EnrollmentNIC2, @EnrollmentCourseId2, @EnrollmentDate2, @PaymentPlan2, @Status2
+            WHERE NOT EXISTS (SELECT 1 FROM Enrollment WHERE NIC = @EnrollmentNIC2 AND CourseId = @EnrollmentCourseId2);
+
+            -- Insert sample data into Payment table if it does not exist
+            INSERT INTO Payment (EnrollmentID, PaymentDate, Amount)
+            SELECT @PaymentEnrollmentID1, @PaymentDate1, @PaymentAmount1
+            WHERE NOT EXISTS (SELECT 1 FROM Payment WHERE EnrollmentID = @PaymentEnrollmentID1);
+
+            INSERT INTO Payment (EnrollmentID, PaymentDate, Amount)
+            SELECT @PaymentEnrollmentID2, @PaymentDate2, @PaymentAmount2
+            WHERE NOT EXISTS (SELECT 1 FROM Payment WHERE EnrollmentID = @PaymentEnrollmentID2);
+
+            -- Insert sample data into Admin table if it does not exist
+            INSERT INTO Admin (NIC, Password)
+            SELECT @AdminNIC1, @AdminPassword1
+            WHERE NOT EXISTS (SELECT 1 FROM Admin WHERE NIC = @AdminNIC1);
+
+            INSERT INTO Admin (NIC, Password)
+            SELECT @AdminNIC2, @AdminPassword2
+            WHERE NOT EXISTS (SELECT 1 FROM Admin WHERE NIC = @AdminNIC2);
+
+            -- Insert sample data into ContactUs table if it does not exist
+            INSERT INTO ContactUs (Name, Email, Message, SubmitDate)
+            SELECT @ContactName1, @ContactEmail1, @ContactMessage1, @ContactDate1
+            WHERE NOT EXISTS (SELECT 1 FROM ContactUs WHERE Email = @ContactEmail1);
+
+            INSERT INTO ContactUs (Name, Email, Message, SubmitDate)
+            SELECT @ContactName2, @ContactEmail2, @ContactMessage2, @ContactDate2
+            WHERE NOT EXISTS (SELECT 1 FROM ContactUs WHERE Email = @ContactEmail2);
+
             -- Additional inserts for other tables can be added here
 
             COMMIT;
@@ -247,6 +283,47 @@ namespace IT_Course_Management_Project1.Database
                         command.Parameters.AddWithValue("@Message2", "Your registration is successful.");
                         command.Parameters.AddWithValue("@NICNO2", "9876543210987");
                         command.Parameters.AddWithValue("@Date2", DateTime.Now);
+
+                        // Parameters for Enrollment
+                        command.Parameters.AddWithValue("@EnrollmentNIC1", "1234567890123");
+                        command.Parameters.AddWithValue("@EnrollmentCourseId1", 1);
+                        command.Parameters.AddWithValue("@EnrollmentDate1", DateTime.Now);
+                        command.Parameters.AddWithValue("@PaymentPlan1", "Full Payment");
+                        command.Parameters.AddWithValue("@Status1", "Enrolled");
+
+                        command.Parameters.AddWithValue("@EnrollmentNIC2", "9876543210987");
+                        command.Parameters.AddWithValue("@EnrollmentCourseId2", 2);
+                        command.Parameters.AddWithValue("@EnrollmentDate2", DateTime.Now);
+                        command.Parameters.AddWithValue("@PaymentPlan2", "Installment");
+                        command.Parameters.AddWithValue("@Status2", "Pending");
+
+                        // Parameters for Payment
+                        command.Parameters.AddWithValue("@PaymentEnrollmentID1", 1);
+                        command.Parameters.AddWithValue("@PaymentDate1", DateTime.Now);
+                        command.Parameters.AddWithValue("@PaymentAmount1", 250);
+
+                        command.Parameters.AddWithValue("@PaymentEnrollmentID2", 2);
+                        command.Parameters.AddWithValue("@PaymentDate2", DateTime.Now);
+                        command.Parameters.AddWithValue("@PaymentAmount2", 200);
+
+                        // Parameters for Admin
+                        command.Parameters.AddWithValue("@AdminNIC1", "admin1");
+                        command.Parameters.AddWithValue("@AdminPassword1", "admin_pass1");
+
+                        command.Parameters.AddWithValue("@AdminNIC2", "admin2");
+                        command.Parameters.AddWithValue("@AdminPassword2", "admin_pass2");
+
+                        // Parameters for ContactUs
+                        command.Parameters.AddWithValue("@ContactName1", "Alice Johnson");
+                        command.Parameters.AddWithValue("@ContactEmail1", "alice.johnson@example.com");
+                        command.Parameters.AddWithValue("@ContactMessage1", "I would like more information about your courses.");
+                        command.Parameters.AddWithValue("@ContactDate1", DateTime.Now);
+
+                        command.Parameters.AddWithValue("@ContactName2", "Bob Brown");
+                        command.Parameters.AddWithValue("@ContactEmail2", "bob.brown@example.com");
+                        command.Parameters.AddWithValue("@ContactMessage2", "How can I enroll in a course?");
+                        command.Parameters.AddWithValue("@ContactDate2", DateTime.Now);
+
 
                         // Execute the command
                         command.ExecuteNonQuery();

@@ -20,11 +20,12 @@ namespace IT_Course_Management_Project1.Repositories
                 await connection.OpenAsync();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                INSERT INTO Enrollment (StudentNic, CourseId, EnrollmentDate, PaymentPlan, Status)
-                VALUES (@studentNic, @courseId, @enrollmentDate, @paymentPlan, @status);
-            ";
+            INSERT INTO Enrollment (NIC, CourseId, EnrollmentDate, PaymentPlan, Status)
+            VALUES (@studentNic, @courseId, @enrollmentDate, @paymentPlan, @status);
+        ";
 
-                command.Parameters.AddWithValue("@NIC", enrollment.StudentNIC);
+                // Fix the parameter name to match what is in the SQL command
+                command.Parameters.AddWithValue("@studentNic", enrollment.StudentNIC);
                 command.Parameters.AddWithValue("@courseId", enrollment.CourseId);
                 command.Parameters.AddWithValue("@enrollmentDate", enrollment.EnrollmentDate);
                 command.Parameters.AddWithValue("@paymentPlan", enrollment.PaymentPlan);
@@ -35,6 +36,7 @@ namespace IT_Course_Management_Project1.Repositories
 
             return enrollment;
         }
+
 
         public async Task<IEnumerable<Enrollment>> GetAllEnrollmentsAsync()
         {
@@ -74,7 +76,7 @@ namespace IT_Course_Management_Project1.Repositories
             {
                 await connection.OpenAsync();
                 var command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM Enrollment WHERE Id = @id";
+                command.CommandText = "SELECT * FROM Enrollment WHERE Id = @id ";
                 command.Parameters.AddWithValue("@id", id);
 
                 using (var reader = await command.ExecuteReaderAsync())
@@ -105,7 +107,7 @@ namespace IT_Course_Management_Project1.Repositories
                 var command = connection.CreateCommand();
                 command.CommandText = @"
                 UPDATE Enrollment
-                SET StudentNic = @studentNic,
+                SET NIC = @studentNic,
                     CourseId = @courseId,
                     EnrollmentDate = @enrollmentDate,
                     PaymentPlan = @paymentPlan,
