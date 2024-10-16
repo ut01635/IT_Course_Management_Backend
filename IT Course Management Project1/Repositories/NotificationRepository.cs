@@ -121,6 +121,37 @@ namespace IT_Course_Management_Project1.Repositories
 
 
         }
+
+
+        public async Task<IEnumerable<Notification>> GetByNicAsync(string nic)
+        {
+            var notifications = new List<Notification>();
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var query = "SELECT * FROM Notification WHERE NIC = @NIC";
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@NIC", nic);
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            notifications.Add(new Notification
+                            {
+                                Id = (int)reader["Id"],
+                                Message = (string)reader["Message"],
+                                StudentNIC = (string)reader["NIC"],
+                                Date = (DateTime)reader["Date"]
+                            });
+                        }
+                    }
+                }
+            }
+            return notifications;
+        }
+
+
     }
 
 

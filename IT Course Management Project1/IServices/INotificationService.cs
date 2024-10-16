@@ -12,5 +12,7 @@ namespace IT_Course_Management_Project1.IServices
         Task DeleteNotificationAsync(int id);
 
         Task UpdateNotificationAsync(Notification notification);
+
+        Task<IEnumerable<Notification>> GetNotificationsByNicAsync(string nic);
     }
 }

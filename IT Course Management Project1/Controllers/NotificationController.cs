@@ -97,5 +97,20 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
 
+        [HttpGet("by-nic/{nic}")]
+        public async Task<IActionResult> GetNotificationsByNic(string nic)
+        {
+            try
+            {
+                var notifications = await _notificationService.GetNotificationsByNicAsync(nic);
+                return Ok(notifications);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"An error occurred while retrieving notifications: {ex.Message}");
+            }
+        }
+
+
     }
 }

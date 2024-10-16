@@ -12,5 +12,7 @@ namespace IT_Course_Management_Project1.IRepository
         Task DeleteAsync(int id);
 
         Task UpdateAsync(Notification notification);
+
+        Task<IEnumerable<Notification>> GetByNicAsync(string nic);
     }
 }

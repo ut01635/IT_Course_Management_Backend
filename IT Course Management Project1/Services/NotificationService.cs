@@ -39,6 +39,16 @@ namespace IT_Course_Management_Project1.Services
             await _notificationRepository.UpdateAsync(notification);
         }
 
+        public async Task<IEnumerable<Notification>> GetNotificationsByNicAsync(string nic)
+        {
+            var notifications = await _notificationRepository.GetByNicAsync(nic);
+            if (notifications == null || !notifications.Any())
+            {
+                throw new Exception("No notifications found for this NIC.");
+            }
+            return notifications;
+        }
+
 
     }
 }
