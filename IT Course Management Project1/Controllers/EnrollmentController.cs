@@ -74,5 +74,19 @@ namespace IT_Course_Management_Project1.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
+        [HttpGet("by-nic/{nic}")]
+        public async Task<IActionResult> GetEnrollmentsByNic(string nic)
+        {
+            var enrollments = await _enrollmentService.GetEnrollmentsByNicAsync(nic);
+            if (enrollments == null || !enrollments.Any())
+            {
+                return NotFound($"No enrollments found for NIC: {nic}");
+            }
+            return Ok(enrollments);
+        }
+
+
     }
 }

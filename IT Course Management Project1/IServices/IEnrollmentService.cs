@@ -9,5 +9,7 @@ namespace IT_Course_Management_Project1.IServices
         Task<Enrollment> GetEnrollmentByIdAsync(int id);
         Task<int> UpdateEnrollmentAsync(int id, Enrollment enrollment);
         Task<int> DeleteEnrollmentAsync(int id);
+
+        Task<IEnumerable<Enrollment>> GetEnrollmentsByNicAsync(string nic);
     }
 }
