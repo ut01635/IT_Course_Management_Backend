@@ -20,7 +20,7 @@ namespace IT_Course_Management_Project1
             DatabaseInitializer database = new DatabaseInitializer();
             database.InitializeDatabase();
             database.CreateTable();
-            //database.InserSampleData();
+            database.InserSampleData();
 
             // Add services to the container.
 
@@ -41,7 +41,11 @@ namespace IT_Course_Management_Project1
             builder.Services.AddSingleton<INotificationRepository>(new NotificationRepository(connectionString));
             builder.Services.AddScoped<INotificationService, NotificationService>();
 
+            builder.Services.AddSingleton<IContactUsRepository>(new ContactUsRepository(connectionString));
+            builder.Services.AddScoped<IContactUsService, ContactUsService>();
 
+            builder.Services.AddSingleton<IAdminRepository>(new AdminRepository(connectionString));
+            builder.Services.AddScoped<IAdminService, AdminService>();
 
 
 

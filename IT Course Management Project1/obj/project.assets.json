@@ -2558,19 +2558,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\UT01228\\.nuget\\packages\\": {}
+    "C:\\Users\\UT01635\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+      "projectUniqueName": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
       "projectName": "IT Course Management Project1",
-      "projectPath": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
-      "packagesPath": "C:\\Users\\UT01228\\.nuget\\packages\\",
-      "outputPath": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\obj\\",
+      "projectPath": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+      "packagesPath": "C:\\Users\\UT01635\\.nuget\\packages\\",
+      "outputPath": "Z:\\other activity\\M2 Project\\IT_Course_Management_Backend\\IT Course Management Project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\UT01228\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\UT01635\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
