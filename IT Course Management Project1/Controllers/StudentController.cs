@@ -55,6 +55,26 @@ namespace IT_Course_Management_Project1.Controllers
             if (result == 0) return NotFound();
             return NoContent();
         }
+
+
+        [HttpPut("update-password/{nic}")]
+        public async Task<IActionResult> UpdatePassword(string nic, [FromBody] string newPassword)
+        {
+            if (string.IsNullOrEmpty(newPassword))
+            {
+                return BadRequest("New password is required.");
+            }
+
+            try
+            {
+                await _studentService.PasswordUpdateAsync(nic, newPassword);
+                return NoContent(); // Successfully updated
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"An error occurred while updating the password: {ex.Message}");
+            }
+        }
     }
 
     

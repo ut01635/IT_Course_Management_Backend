@@ -9,5 +9,7 @@ namespace IT_Course_Management_Project1.IRepository
         Task<Student> GetStudentByNicAsync(string nic);
         Task<Student> UpdateStudentAsync(string nic, Student student);
         Task<int> DeleteStudentAsync(string nic);
+
+        Task PasswordUpdateAsync(string nic, string newPassword);
     }
 }

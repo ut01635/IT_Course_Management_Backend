@@ -148,5 +148,32 @@ namespace IT_Course_Management_Project1.Repositories
                 return await command.ExecuteNonQueryAsync();
             }
         }
+
+
+        public async Task PasswordUpdateAsync(string nic, string newPassword)
+        {
+            var student = await GetStudentByNicAsync(nic);
+            if (student == null)
+            {
+                throw new Exception("Student Not Found!");
+            }
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var command = connection.CreateCommand();
+                command.CommandText = "UPDATE Students SET Password = @newPassword WHERE Nic = @nic";
+                command.Parameters.AddWithValue("@newPassword", newPassword);
+                command.Parameters.AddWithValue("@nic", nic);
+
+                var rowsAffected = await command.ExecuteNonQueryAsync();
+                if (rowsAffected == 0)
+                {
+                    throw new Exception("Failed to update password. No rows affected.");
+                }
+            }
+        }
+        
+
     }
 }

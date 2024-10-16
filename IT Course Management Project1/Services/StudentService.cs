@@ -39,5 +39,10 @@ namespace IT_Course_Management_Project1.Services
         {
             return await _studentRepository.DeleteStudentAsync(nic);
         }
+
+        public async Task PasswordUpdateAsync(string nic, string newPassword)
+        {
+            await _studentRepository.PasswordUpdateAsync(nic, newPassword);
+        }
     }
 }
