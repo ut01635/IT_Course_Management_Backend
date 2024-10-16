@@ -34,6 +34,11 @@ namespace IT_Course_Management_Project1.Services
             await _notificationRepository.DeleteAsync(id);
         }
 
+        public async Task UpdateNotificationAsync(Notification notification)
+        {
+            await _notificationRepository.UpdateAsync(notification);
+        }
+
 
     }
 }

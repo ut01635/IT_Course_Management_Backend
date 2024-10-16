@@ -10,5 +10,7 @@ namespace IT_Course_Management_Project1.IRepository
         Task<IEnumerable<Notification>> GetAllAsync();
 
         Task DeleteAsync(int id);
+
+        Task UpdateAsync(Notification notification);
     }
 }

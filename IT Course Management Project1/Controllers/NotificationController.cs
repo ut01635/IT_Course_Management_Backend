@@ -78,5 +78,24 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateNotification(int id, [FromBody] Notification notification)
+        {
+            try
+            {
+                if (id != notification.Id)
+                {
+                    return BadRequest("Notification ID mismatch.");
+                }
+                await _notificationService.UpdateNotificationAsync(notification);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+
     }
 }

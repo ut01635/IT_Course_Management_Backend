@@ -102,5 +102,29 @@ namespace IT_Course_Management_Project1.Repositories
         }
 
 
+        public async Task UpdateAsync(Notification notification)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var query = "UPDATE Notification SET Message = @Message, NIC = @NIC, Date = @Date WHERE Id = @Id";
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Id", notification.Id);
+                    command.Parameters.AddWithValue("@Message", notification.Message);
+                    command.Parameters.AddWithValue("@NIC", notification.StudentNIC);
+                    command.Parameters.AddWithValue("@Date", notification.Date);
+
+                    await command.ExecuteNonQueryAsync();
+                }
+            }
+
+
+        }
     }
+
+
 }
+
+
+
