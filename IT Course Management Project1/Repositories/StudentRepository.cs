@@ -112,28 +112,25 @@ namespace IT_Course_Management_Project1.Repositories
                 await connection.OpenAsync();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                UPDATE Students 
-                SET FullName = @fullName, 
-                    Email = @email, 
-                    Phone = @phone, 
-                    Password = @password, 
-                    RegistrationFee = @registrationFee, 
-                    ImagePath = @imagePath
-                WHERE Nic = @nic
-            ";
+            UPDATE Students 
+            SET FullName = @fullName, 
+                Email = @email, 
+                Phone = @phone, 
+                ImagePath = @imagePath
+            WHERE Nic = @nic
+        ";
 
                 command.Parameters.AddWithValue("@nic", nic);
                 command.Parameters.AddWithValue("@fullName", student.FullName);
                 command.Parameters.AddWithValue("@email", student.Email);
                 command.Parameters.AddWithValue("@phone", student.Phone);
-                command.Parameters.AddWithValue("@password", student.Password);
-                command.Parameters.AddWithValue("@registrationFee", student.RegistrationFee);
                 command.Parameters.AddWithValue("@imagePath", student.ImagePath ?? (object)DBNull.Value);
 
                 await command.ExecuteNonQueryAsync();
                 return student;
             }
         }
+
 
         // Delete student by NIC
         public async Task<int> DeleteStudentAsync(string nic)

@@ -40,7 +40,7 @@ namespace IT_Course_Management_Project1.Controllers
             return CreatedAtAction(nameof(GetStudentByNic), new { nic = addedStudent.Nic }, addedStudent);
         }
 
-        [HttpPut("Update-Student{nic}")]
+        [HttpPut("Update-Student/{nic}")]
         public async Task<ActionResult> UpdateStudent(string nic, [FromBody] Student student)
         {
             var result = await _studentService.UpdateStudentAsync(nic, student);
@@ -48,7 +48,8 @@ namespace IT_Course_Management_Project1.Controllers
             return NoContent();
         }
 
-        [HttpDelete("Delete-student{nic}")]
+
+        [HttpDelete("Delete-student/{nic}")]
         public async Task<ActionResult> DeleteStudent(string nic)
         {
             var result = await _studentService.DeleteStudentAsync(nic);

@@ -35,6 +35,7 @@ namespace IT_Course_Management_Project1.Services
             return await _studentRepository.UpdateStudentAsync(nic, student);
         }
 
+
         public async Task<int> DeleteStudentAsync(string nic)
         {
             return await _studentRepository.DeleteStudentAsync(nic);
