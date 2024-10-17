@@ -21,8 +21,8 @@ namespace IT_Course_Management_Project1.Repositories
                 await connection.OpenAsync();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                INSERT INTO Students (Nic, FullName, Email, Phone, Password, RegistrationFee, ImagePath)
-                VALUES (@nic, @fullName, @email, @phone, @password, @registrationFee, @imagePath);
+                INSERT INTO Students (Nic, FullName, Email, Phone, Password, RegistrationFee)
+                VALUES (@nic, @fullName, @email, @phone, @password, @registrationFee);
             ";
 
                 command.Parameters.AddWithValue("@nic", student.Nic);
@@ -31,7 +31,7 @@ namespace IT_Course_Management_Project1.Repositories
                 command.Parameters.AddWithValue("@phone", student.Phone);
                 command.Parameters.AddWithValue("@password", student.Password);
                 command.Parameters.AddWithValue("@registrationFee", student.RegistrationFee);
-                command.Parameters.AddWithValue("@imagePath", student.ImagePath ?? (object)DBNull.Value);
+                
 
                 await command.ExecuteNonQueryAsync();
             }
@@ -62,7 +62,7 @@ namespace IT_Course_Management_Project1.Repositories
                             Phone = reader.GetString(reader.GetOrdinal("Phone")),
                             Password = reader.GetString(reader.GetOrdinal("Password")),
                             RegistrationFee = reader.GetInt32(reader.GetOrdinal("RegistrationFee")),
-                            ImagePath = reader.IsDBNull(reader.GetOrdinal("ImagePath")) ? null : reader.GetString(reader.GetOrdinal("ImagePath"))
+                           
                         });
                     }
                 }
@@ -95,7 +95,7 @@ namespace IT_Course_Management_Project1.Repositories
                             Phone = reader.GetString(reader.GetOrdinal("Phone")),
                             Password = reader.GetString(reader.GetOrdinal("Password")),
                             RegistrationFee = reader.GetInt32(reader.GetOrdinal("RegistrationFee")),
-                            ImagePath = reader.IsDBNull(reader.GetOrdinal("ImagePath")) ? null : reader.GetString(reader.GetOrdinal("ImagePath"))
+                           
                         };
                     }
                 }
@@ -112,24 +112,22 @@ namespace IT_Course_Management_Project1.Repositories
                 await connection.OpenAsync();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-             UPDATE Students 
-             SET FullName = @fullName, 
-                Email = @email, 
-                Phone = @phone, 
-                ImagePath = @imagePath
-             WHERE Nic = @nic
-        ";
+        UPDATE Students 
+        SET FullName = @fullName, 
+            Email = @email, 
+            Phone = @phone 
+        WHERE Nic = @nic";
 
                 command.Parameters.AddWithValue("@nic", nic);
                 command.Parameters.AddWithValue("@fullName", student.FullName);
                 command.Parameters.AddWithValue("@email", student.Email);
                 command.Parameters.AddWithValue("@phone", student.Phone);
-                command.Parameters.AddWithValue("@imagePath", student.ImagePath ?? (object)DBNull.Value);
 
                 await command.ExecuteNonQueryAsync();
                 return student;
             }
         }
+
 
 
         // Delete student by NIC

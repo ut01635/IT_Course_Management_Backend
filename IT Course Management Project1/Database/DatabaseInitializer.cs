@@ -62,8 +62,8 @@ namespace IT_Course_Management_Project1.Database
                     Phone NVARCHAR(15) NOT NULL,
                     Password NVARCHAR(50) NOT NULL,
                     RegistrationFee INT NOT NULL,
-                    CourseEnrollId INT NULL,
-                    ImagePath NVARCHAR(100) NULL
+                    CourseEnrollId INT NULL
+                    
                 );
             END;
 
@@ -169,12 +169,12 @@ namespace IT_Course_Management_Project1.Database
             BEGIN TRANSACTION;
 
             -- Insert sample data into Students table if it does not exist
-            INSERT INTO Students (Nic, FullName, Email, Phone, Password, RegistrationFee, CourseEnrollId, ImagePath)
-            SELECT @Nic1, @FullName1, @Email1, @Phone1, @Password1, @RegistrationFee1, @CourseEnrollId1, @ImagePath1
+            INSERT INTO Students (Nic, FullName, Email, Phone, Password, RegistrationFee, CourseEnrollId)
+            SELECT @Nic1, @FullName1, @Email1, @Phone1, @Password1, @RegistrationFee1, @CourseEnrollId1
             WHERE NOT EXISTS (SELECT 1 FROM Students WHERE Nic = @Nic1);
 
-            INSERT INTO Students (Nic, FullName, Email, Phone, Password, RegistrationFee, CourseEnrollId, ImagePath)
-            SELECT @Nic2, @FullName2, @Email2, @Phone2, @Password2, @RegistrationFee2, @CourseEnrollId2, @ImagePath2
+            INSERT INTO Students (Nic, FullName, Email, Phone, Password, RegistrationFee, CourseEnrollId)
+            SELECT @Nic2, @FullName2, @Email2, @Phone2, @Password2, @RegistrationFee2, @CourseEnrollId2
             WHERE NOT EXISTS (SELECT 1 FROM Students WHERE Nic = @Nic2);
 
             -- Insert sample data into Course table if it does not exist
@@ -251,7 +251,7 @@ namespace IT_Course_Management_Project1.Database
                         command.Parameters.AddWithValue("@Password1", "hashed_password1"); // Replace with hashed password
                         command.Parameters.AddWithValue("@RegistrationFee1", 500);
                         command.Parameters.AddWithValue("@CourseEnrollId1", 1);
-                        command.Parameters.AddWithValue("@ImagePath1", @"C:\Images\student1.jpg");
+                      
 
                         command.Parameters.AddWithValue("@Nic2", "9876543210987");
                         command.Parameters.AddWithValue("@FullName2", "Jane Smith");
@@ -260,7 +260,7 @@ namespace IT_Course_Management_Project1.Database
                         command.Parameters.AddWithValue("@Password2", "hashed_password2"); // Replace with hashed password
                         command.Parameters.AddWithValue("@RegistrationFee2", 300);
                         command.Parameters.AddWithValue("@CourseEnrollId2", DBNull.Value); // NULL
-                        command.Parameters.AddWithValue("@ImagePath2", @"C:\Images\student2.jpg");
+                       
 
                         // Parameters for Courses
                         command.Parameters.AddWithValue("@CourseName1", "Introduction to Programming");

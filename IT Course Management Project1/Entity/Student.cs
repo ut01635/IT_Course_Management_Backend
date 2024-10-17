@@ -8,6 +8,6 @@
         public string Phone { get; set; }
         public string Password { get; set; }
         public int RegistrationFee { get; set; }
-        public string ImagePath { get; set; }
+        
     }
 }
