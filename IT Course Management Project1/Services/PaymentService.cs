@@ -13,6 +13,7 @@ namespace IT_Course_Management_Project1.Services
             _paymentRepository = paymentRepository;
         }
 
+
         public async Task<IEnumerable<Payment>> GetAllPaymentsAsync()
         {
             try
@@ -34,18 +35,6 @@ namespace IT_Course_Management_Project1.Services
             catch (Exception ex)
             {
                 throw new Exception($"Error in service layer: Unable to fetch payment with ID {id}.", ex);
-            }
-        }
-
-        public async Task<IEnumerable<Payment>> GetPaymentsByEnrollmentIdAsync(int enrollmentId)
-        {
-            try
-            {
-                return await _paymentRepository.GetPaymentsByEnrollmentIdAsync(enrollmentId);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error in service layer: Unable to fetch payments for Enrollment ID {enrollmentId}.", ex);
             }
         }
 
@@ -81,7 +70,31 @@ namespace IT_Course_Management_Project1.Services
             }
             catch (Exception ex)
             {
-                throw new Exception("Error in service layer: Unable to delete payment.", ex);
+                throw new Exception($"Error in service layer: Unable to delete payment with ID {id}.", ex);
+            }
+        }
+
+        public async Task<IEnumerable<Payment>> GetPaymentsByEnrollmentIdAsync(int enrollmentId)
+        {
+            try
+            {
+                return await _paymentRepository.GetPaymentsByEnrollmentIdAsync(enrollmentId);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error in service layer: Unable to fetch payments for Enrollment ID {enrollmentId}.", ex);
+            }
+        }
+
+        public async Task<IEnumerable<Payment>> GetPaymentsByNicAsync(string nic)
+        {
+            try
+            {
+                return await _paymentRepository.GetPaymentsByNicAsync(nic);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error in service layer: Unable to fetch payments for NIC {nic}.", ex);
             }
         }
     }

@@ -23,12 +23,13 @@ public class PaymentRepository : IPaymentRepository
             await connection.OpenAsync();
             var command = connection.CreateCommand();
             command.CommandText = @"
-                INSERT INTO Payment (EnrollmentID, PaymentDate, Amount)
+                INSERT INTO Payment (EnrollmentID, Nic, PaymentDate, Amount)
                 OUTPUT INSERTED.ID
-                VALUES (@enrollmentId, @paymentDate, @amount);
+                VALUES (@enrollmentId, @nic, @paymentDate, @amount);
             ";
 
             command.Parameters.AddWithValue("@enrollmentId", payment.EnrollmentID);
+            command.Parameters.AddWithValue("@nic", payment.Nic);
             command.Parameters.AddWithValue("@paymentDate", payment.PaymentDate);
             command.Parameters.AddWithValue("@amount", payment.Amount);
 
@@ -70,6 +71,7 @@ public class PaymentRepository : IPaymentRepository
                         {
                             ID = reader.GetInt32(reader.GetOrdinal("ID")),
                             EnrollmentID = reader.GetInt32(reader.GetOrdinal("EnrollmentID")),
+                            Nic = reader.GetString(reader.GetOrdinal("Nic")),
                             PaymentDate = reader.GetDateTime(reader.GetOrdinal("PaymentDate")),
                             Amount = reader.GetDecimal(reader.GetOrdinal("Amount"))
                         });
@@ -111,6 +113,7 @@ public class PaymentRepository : IPaymentRepository
                         {
                             ID = reader.GetInt32(reader.GetOrdinal("ID")),
                             EnrollmentID = reader.GetInt32(reader.GetOrdinal("EnrollmentID")),
+                            Nic = reader.GetString(reader.GetOrdinal("Nic")),
                             PaymentDate = reader.GetDateTime(reader.GetOrdinal("PaymentDate")),
                             Amount = reader.GetDecimal(reader.GetOrdinal("Amount"))
                         };
@@ -152,6 +155,7 @@ public class PaymentRepository : IPaymentRepository
                         {
                             ID = reader.GetInt32(reader.GetOrdinal("ID")),
                             EnrollmentID = reader.GetInt32(reader.GetOrdinal("EnrollmentID")),
+                            Nic = reader.GetString(reader.GetOrdinal("Nic")),
                             PaymentDate = reader.GetDateTime(reader.GetOrdinal("PaymentDate")),
                             Amount = reader.GetDecimal(reader.GetOrdinal("Amount"))
                         });
@@ -171,6 +175,48 @@ public class PaymentRepository : IPaymentRepository
         return payments;
     }
 
+    // Get Payments by NIC
+    public async Task<IEnumerable<Payment>> GetPaymentsByNicAsync(string nic)
+    {
+        var payments = new List<Payment>();
+
+        using (var connection = new SqlConnection(_connectionString))
+        {
+            await connection.OpenAsync();
+            var command = connection.CreateCommand();
+            command.CommandText = "SELECT * FROM Payment WHERE Nic = @nic";
+            command.Parameters.AddWithValue("@nic", nic);
+
+            try
+            {
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+                        payments.Add(new Payment
+                        {
+                            ID = reader.GetInt32(reader.GetOrdinal("ID")),
+                            EnrollmentID = reader.GetInt32(reader.GetOrdinal("EnrollmentID")),
+                            Nic = reader.GetString(reader.GetOrdinal("Nic")),
+                            PaymentDate = reader.GetDateTime(reader.GetOrdinal("PaymentDate")),
+                            Amount = reader.GetDecimal(reader.GetOrdinal("Amount"))
+                        });
+                    }
+                }
+            }
+            catch (SqlException sqlEx)
+            {
+                throw new ApplicationException("Database operation failed while fetching payments by NIC.", sqlEx);
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("An error occurred while fetching payments by NIC.", ex);
+            }
+        }
+
+        return payments;
+    }
+
     // Update Payment
     public async Task<Payment> UpdatePaymentAsync(Payment payment)
     {
@@ -180,12 +226,13 @@ public class PaymentRepository : IPaymentRepository
             var command = connection.CreateCommand();
             command.CommandText = @"
                 UPDATE Payment
-                SET EnrollmentID = @enrollmentId, PaymentDate = @paymentDate, Amount = @amount
+                SET EnrollmentID = @enrollmentId, Nic = @nic, PaymentDate = @paymentDate, Amount = @amount
                 WHERE ID = @id;
             ";
 
             command.Parameters.AddWithValue("@id", payment.ID);
             command.Parameters.AddWithValue("@enrollmentId", payment.EnrollmentID);
+            command.Parameters.AddWithValue("@nic", payment.Nic);
             command.Parameters.AddWithValue("@paymentDate", payment.PaymentDate);
             command.Parameters.AddWithValue("@amount", payment.Amount);
 

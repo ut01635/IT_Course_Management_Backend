@@ -103,6 +103,7 @@ namespace IT_Course_Management_Project1.Database
                     EnrollmentID INT NOT NULL,
                     PaymentDate DATETIME NOT NULL,
                     Amount DECIMAL(18, 2) NOT NULL,
+                    NIC NVARCHAR(15) NOT NULL,
                     FOREIGN KEY (EnrollmentID) REFERENCES Enrollment(ID)
                 );
             END;
@@ -204,13 +205,13 @@ namespace IT_Course_Management_Project1.Database
             WHERE NOT EXISTS (SELECT 1 FROM Enrollment WHERE NIC = @EnrollmentNIC2 AND CourseId = @EnrollmentCourseId2);
 
             -- Insert sample data into Payment table if it does not exist
-            INSERT INTO Payment (EnrollmentID, PaymentDate, Amount)
-            SELECT @PaymentEnrollmentID1, @PaymentDate1, @PaymentAmount1
+            INSERT INTO Payment (EnrollmentID, NIC, PaymentDate, Amount)
+            SELECT @PaymentEnrollmentID1, @PaymentNic1, @PaymentDate1, @PaymentAmount1
             WHERE NOT EXISTS (SELECT 1 FROM Payment WHERE EnrollmentID = @PaymentEnrollmentID1);
 
-            INSERT INTO Payment (EnrollmentID, PaymentDate, Amount)
-            SELECT @PaymentEnrollmentID2, @PaymentDate2, @PaymentAmount2
-            WHERE NOT EXISTS (SELECT 1 FROM Payment WHERE EnrollmentID = @PaymentEnrollmentID2);
+             INSERT INTO Payment (EnrollmentID, NIC, PaymentDate, Amount)
+             SELECT @PaymentEnrollmentID2, @PaymentNic2, @PaymentDate2, @PaymentAmount2
+             WHERE NOT EXISTS (SELECT 1 FROM Payment WHERE EnrollmentID = @PaymentEnrollmentID2);
 
             -- Insert sample data into Admin table if it does not exist
             INSERT INTO Admin (NIC, Password)
@@ -299,10 +300,12 @@ namespace IT_Course_Management_Project1.Database
 
                         // Parameters for Payment
                         command.Parameters.AddWithValue("@PaymentEnrollmentID1", 1);
+                        command.Parameters.AddWithValue("@PaymentNic1", "123456789V"); // Sample NIC
                         command.Parameters.AddWithValue("@PaymentDate1", DateTime.Now);
                         command.Parameters.AddWithValue("@PaymentAmount1", 250);
 
                         command.Parameters.AddWithValue("@PaymentEnrollmentID2", 2);
+                        command.Parameters.AddWithValue("@PaymentNic2", "987654321V"); // Sample NIC
                         command.Parameters.AddWithValue("@PaymentDate2", DateTime.Now);
                         command.Parameters.AddWithValue("@PaymentAmount2", 200);
 

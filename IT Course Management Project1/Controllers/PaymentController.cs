@@ -19,89 +19,56 @@ namespace IT_Course_Management_Project1.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllPayments()
         {
-            try
-            {
-                var payments = await _paymentService.GetAllPaymentsAsync();
-                return Ok(payments);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
+            var payments = await _paymentService.GetAllPaymentsAsync();
+            return Ok(payments);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPaymentById(int id)
         {
-            try
-            {
-                var payment = await _paymentService.GetPaymentByIdAsync(id);
-                if (payment == null) return NotFound();
-                return Ok(payment);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
-        }
-
-        [HttpGet("enrollment/{enrollmentId}")]
-        public async Task<IActionResult> GetPaymentsByEnrollmentId(int enrollmentId)
-        {
-            try
-            {
-                var payments = await _paymentService.GetPaymentsByEnrollmentIdAsync(enrollmentId);
-                if (payments == null) return NotFound();
-                return Ok(payments);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
+            var payment = await _paymentService.GetPaymentByIdAsync(id);
+            if (payment == null) return NotFound();
+            return Ok(payment);
         }
 
         [HttpPost]
         public async Task<IActionResult> AddPayment([FromBody] Payment payment)
         {
-            try
-            {
-                var addedPayment = await _paymentService.AddPaymentAsync(payment);
-                return CreatedAtAction(nameof(GetPaymentById), new { id = addedPayment.ID }, addedPayment);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
+            if (payment == null) return BadRequest("Payment data is null.");
+            var addedPayment = await _paymentService.AddPaymentAsync(payment);
+            return CreatedAtAction(nameof(GetPaymentById), new { id = addedPayment.ID }, addedPayment);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdatePayment(int id, [FromBody] Payment payment)
         {
-            try
-            {
-                if (id != payment.ID) return BadRequest();
-                var updatedPayment = await _paymentService.UpdatePaymentAsync(payment);
-                return Ok(updatedPayment);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
+            if (payment == null || payment.ID != id) return BadRequest("Payment data is invalid.");
+            var updatedPayment = await _paymentService.UpdatePaymentAsync(payment);
+            if (updatedPayment == null) return NotFound();
+            return Ok(updatedPayment);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePayment(int id)
         {
-            try
-            {
-                var result = await _paymentService.DeletePaymentAsync(id);
-                if (!result) return NotFound();
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Internal server error: {ex.Message}");
-            }
+            var result = await _paymentService.DeletePaymentAsync(id);
+            if (!result) return NotFound();
+            return NoContent();
+        }
+
+        [HttpGet("enrollment/{enrollmentId}")]
+        public async Task<IActionResult> GetPaymentsByEnrollmentId(int enrollmentId)
+        {
+            var payments = await _paymentService.GetPaymentsByEnrollmentIdAsync(enrollmentId);
+            return Ok(payments);
+        }
+
+        [HttpGet("nic/{nic}")]
+        public async Task<IActionResult> GetPaymentsByNic(string nic)
+        {
+            var payments = await _paymentService.GetPaymentsByNicAsync(nic);
+            if (payments == null || !payments.Any()) return NotFound();
+            return Ok(payments);
         }
     }
 }
