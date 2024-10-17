@@ -24,6 +24,15 @@ namespace IT_Course_Management_Project1
 
             // Add services to the container.
 
+            // Add CORS policy
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder => builder.AllowAnyOrigin()
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod());
+            });
+
 
 
             builder.Services.AddSingleton<IStudentRepository>(new StudentRepository(connectionString));
@@ -67,9 +76,10 @@ namespace IT_Course_Management_Project1
             }
 
             app.UseHttpsRedirection();
-            app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
-            app.UseHttpsRedirection();
+
+            // Use the CORS policy
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 
