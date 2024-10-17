@@ -104,7 +104,7 @@ namespace IT_Course_Management_Project1.Repositories
             return student;
         }
 
-        // Update student
+        // Update  Student
         public async Task<Student> UpdateStudentAsync(string nic, Student student)
         {
             using (var connection = new SqlConnection(_connectionString))
@@ -112,12 +112,12 @@ namespace IT_Course_Management_Project1.Repositories
                 await connection.OpenAsync();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-            UPDATE Students 
-            SET FullName = @fullName, 
+             UPDATE Students 
+             SET FullName = @fullName, 
                 Email = @email, 
                 Phone = @phone, 
                 ImagePath = @imagePath
-            WHERE Nic = @nic
+             WHERE Nic = @nic
         ";
 
                 command.Parameters.AddWithValue("@nic", nic);
