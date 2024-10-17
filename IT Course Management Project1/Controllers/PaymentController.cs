@@ -15,15 +15,15 @@ namespace IT_Course_Management_Project1.Controllers
         {
             _paymentService = paymentService;
         }
-
-        [HttpGet]
+         
+        [HttpGet ("Get-All-PAyments")]
         public async Task<IActionResult> GetAllPayments()
         {
             var payments = await _paymentService.GetAllPaymentsAsync();
             return Ok(payments);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("Get-PaymentById{id}")]
         public async Task<IActionResult> GetPaymentById(int id)
         {
             var payment = await _paymentService.GetPaymentByIdAsync(id);
@@ -31,7 +31,7 @@ namespace IT_Course_Management_Project1.Controllers
             return Ok(payment);
         }
 
-        [HttpPost]
+        [HttpPost ("Create-Payment")]
         public async Task<IActionResult> AddPayment([FromBody] Payment payment)
         {
             if (payment == null) return BadRequest("Payment data is null.");
@@ -39,7 +39,7 @@ namespace IT_Course_Management_Project1.Controllers
             return CreatedAtAction(nameof(GetPaymentById), new { id = addedPayment.ID }, addedPayment);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("Update-Payment{id}")]
         public async Task<IActionResult> UpdatePayment(int id, [FromBody] Payment payment)
         {
             if (payment == null || payment.ID != id) return BadRequest("Payment data is invalid.");
@@ -48,7 +48,7 @@ namespace IT_Course_Management_Project1.Controllers
             return Ok(updatedPayment);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete-Payment{id}")]
         public async Task<IActionResult> DeletePayment(int id)
         {
             var result = await _paymentService.DeletePaymentAsync(id);
@@ -56,14 +56,14 @@ namespace IT_Course_Management_Project1.Controllers
             return NoContent();
         }
 
-        [HttpGet("enrollment/{enrollmentId}")]
+        [HttpGet("GetByEnrollment/{enrollmentId}")]
         public async Task<IActionResult> GetPaymentsByEnrollmentId(int enrollmentId)
         {
             var payments = await _paymentService.GetPaymentsByEnrollmentIdAsync(enrollmentId);
             return Ok(payments);
         }
 
-        [HttpGet("nic/{nic}")]
+        [HttpGet("GetByNIC/{nic}")]
         public async Task<IActionResult> GetPaymentsByNic(string nic)
         {
             var payments = await _paymentService.GetPaymentsByNicAsync(nic);

@@ -3,56 +3,76 @@
   "WorkspaceRootPath": "D:\\project\\IT_Course_Management_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\controllers\\contactuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\contactuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\irepository\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\iservices\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\entity\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\entity\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\entity\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\entity\\contactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\contactus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\entity\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\iservices\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\irepository\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\iservices\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,48 +83,40 @@
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\services\\contactusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\services\\contactusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\iservices\\icontactusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\icontactusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\iservices\\istudentservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\istudentservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\repositories\\contactusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\contactusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\irepository\\icontactusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\icontactusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\iservices\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\irepository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\repositories\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\repositories\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\iservices\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\irepository\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\irepository\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|d:\\project\\it_course_management_backend\\it course management project1\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\iservices\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,325 +130,290 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PaymentService.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\PaymentService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\PaymentService.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\PaymentService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Services\\PaymentService.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAAFYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:44:30.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IPaymentService.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IPaymentService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IPaymentService.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IPaymentService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IServices\\IPaymentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:44:04.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IPaymentRepository.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IPaymentRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\IPaymentRepository.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IPaymentRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IRepository\\IPaymentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:39:32.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PaymentRepository.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\PaymentRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\PaymentRepository.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\PaymentRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Repositories\\PaymentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:38:43.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DatabaseInitializer.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGQAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:11:01.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Program.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Program.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Program.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAACYAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:57:31.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\PaymentController.cs",
               "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\PaymentController.cs",
               "RelativeToolTip": "IT Course Management Project1\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAqwGkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAADoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T18:12:13.519Z",
+              "WhenOpened": "2024-10-17T11:48:11.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Payment.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Payment.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Payment.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Entity\\Payment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAEEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:50:46.49Z",
+              "WhenOpened": "2024-10-16T08:59:43.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\NotificationController.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Controllers\\NotificationController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAFAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:46:14.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactUsController.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\ContactUsController.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\ContactUsController.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\ContactUsController.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Controllers\\ContactUsController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:11:59.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Database\\AppDbContext.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\AppDbContext.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Database\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Payment.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Payment.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Payment.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Entity\\Payment.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:50:06.298Z",
+              "WhenOpened": "2024-10-17T11:40:24.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Student.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Student.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Student.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Entity\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "DatabaseInitializer.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAADwBAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:49:47.26Z",
+              "WhenOpened": "2024-10-17T11:42:14.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Course.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Course.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Course.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Course.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Entity\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA9wFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:49:37.38Z",
+              "WhenOpened": "2024-10-16T10:12:22.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ContactUs.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\ContactUs.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\ContactUs.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\ContactUs.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Entity\\ContactUs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\CourseController.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAG0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:49:34.786Z",
+              "WhenOpened": "2024-10-17T17:32:34.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "INotificationService.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\INotificationService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\INotificationService.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\INotificationService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IServices\\INotificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:43:32.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\NotificationService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\NotificationService.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\NotificationService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Services\\NotificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:43:22.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Enrollment.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Enrollment.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Enrollment.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Enrollment.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Entity\\Enrollment.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T11:04:37.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ContactUsService.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\ContactUsService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\ContactUsService.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\ContactUsService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Services\\ContactUsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:42:51.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IContactUsService.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IContactUsService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IContactUsService.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IContactUsService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IServices\\IContactUsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:42:10.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "NotificationRepository.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\NotificationRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\NotificationRepository.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\NotificationRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Repositories\\NotificationRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:38:18.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "INotificationRepository.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\INotificationRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\INotificationRepository.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\INotificationRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IRepository\\INotificationRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:37:49.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ContactUsRepository.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\ContactUsRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\ContactUsRepository.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\ContactUsRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Repositories\\ContactUsRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:35:26.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IContactUsRepository.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IContactUsRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\IContactUsRepository.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IContactUsRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IRepository\\IContactUsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T17:35:10.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 3,
               "Title": "EnrollmentController.cs",
               "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\EnrollmentController.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Controllers\\EnrollmentController.cs",
               "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Controllers\\EnrollmentController.cs",
               "RelativeToolTip": "IT Course Management Project1\\Controllers\\EnrollmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAFsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:52:39.517Z",
+              "WhenOpened": "2024-10-16T10:24:26.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "INotificationRepository.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\INotificationRepository.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\INotificationRepository.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\INotificationRepository.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IRepository\\INotificationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:45:21.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Student.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Student.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Student.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Entity\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T06:57:53.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\PaymentRepository.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\PaymentRepository.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Repositories\\PaymentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcBAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T11:47:20.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Enrollment.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Enrollment.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Enrollment.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Entity\\Enrollment.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:25:32.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\StudentRepository.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Repositories\\StudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:37:13.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\PaymentService.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\PaymentService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Services\\PaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T11:47:57.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\StudentService.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\StudentService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Services\\StudentService.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAcwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:37:44.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPaymentRepository.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IPaymentRepository.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\IPaymentRepository.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IPaymentRepository.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IRepository\\IPaymentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T11:48:51.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IPaymentService.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IPaymentService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IServices\\IPaymentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T11:49:06.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Program.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Program.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Program.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T09:29:48.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NotificationRepository.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\NotificationRepository.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\NotificationRepository.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\NotificationRepository.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Repositories\\NotificationRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:43:53.854Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "IEnrollmentService.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IEnrollmentService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IEnrollmentService.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IEnrollmentService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IServices\\IEnrollmentService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\IStudentRepository.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IStudentRepository.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IRepository\\IStudentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:51:58.339Z"
+              "WhenOpened": "2024-10-16T10:37:35.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EnrollmentService.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\EnrollmentService.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\EnrollmentService.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\EnrollmentService.cs",
-              "RelativeToolTip": "IT Course Management Project1\\Services\\EnrollmentService.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowDAAAAAWAAAA",
+              "DocumentIndex": 19,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\NotificationService.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\NotificationService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Services\\NotificationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:51:33.407Z"
+              "WhenOpened": "2024-10-16T10:45:33.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IEnrollmentRepository.cs",
-              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IEnrollmentRepository.cs",
-              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\IEnrollmentRepository.cs",
-              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IEnrollmentRepository.cs",
-              "RelativeToolTip": "IT Course Management Project1\\IRepository\\IEnrollmentRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "DocumentIndex": 18,
+              "Title": "INotificationService.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\INotificationService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\INotificationService.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\INotificationService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IServices\\INotificationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:50:44.801Z"
+              "WhenOpened": "2024-10-16T10:46:01.124Z"
             },
             {
               "$type": "Document",
@@ -446,9 +423,69 @@
               "RelativeDocumentMoniker": "IT Course Management Project1\\Repositories\\EnrollmentRepository.cs",
               "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Repositories\\EnrollmentRepository.cs",
               "RelativeToolTip": "IT Course Management Project1\\Repositories\\EnrollmentRepository.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAADwvxoAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T10:49:54.488Z"
+              "WhenOpened": "2024-10-16T10:23:22.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IEnrollmentRepository.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IEnrollmentRepository.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IRepository\\IEnrollmentRepository.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IRepository\\IEnrollmentRepository.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IRepository\\IEnrollmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:23:03.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IStudentService .cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IStudentService .cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IStudentService .cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IStudentService .cs",
+              "RelativeToolTip": "IT Course Management Project1\\IServices\\IStudentService .cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:12:10.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EnrollmentService.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\EnrollmentService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\Services\\EnrollmentService.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\Services\\EnrollmentService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\Services\\EnrollmentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:23:55.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IEnrollmentService.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IEnrollmentService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IEnrollmentService.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IEnrollmentService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IServices\\IEnrollmentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:24:17.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IAdminService.cs",
+              "RelativeDocumentMoniker": "IT Course Management Project1\\IServices\\IAdminService.cs",
+              "ToolTip": "D:\\project\\IT_Course_Management_Backend\\IT Course Management Project1\\IServices\\IAdminService.cs",
+              "RelativeToolTip": "IT Course Management Project1\\IServices\\IAdminService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T10:11:57.191Z"
             }
           ]
         }

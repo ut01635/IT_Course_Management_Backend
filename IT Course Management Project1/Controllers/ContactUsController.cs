@@ -16,7 +16,7 @@ namespace IT_Course_Management_Project1.Controllers
             _contactUsService = contactUsService;
         }
 
-        [HttpPost]
+        [HttpPost ("CreateContactUs")]
         public ActionResult<ContactUs> CreateContact([FromBody] ContactUs contactUs)
         {
             if (contactUs == null) return BadRequest("Contact details are required.");
@@ -25,7 +25,7 @@ namespace IT_Course_Management_Project1.Controllers
             return CreatedAtAction(nameof(GetContactById), new { id = createdContact.Id }, createdContact);
         }
 
-        [HttpGet]
+        [HttpGet ("GetAll")]
         public ActionResult<List<ContactUs>> GetAllContacts()
         {
             var contacts = _contactUsService.RetrieveAllContacts();
@@ -48,7 +48,7 @@ namespace IT_Course_Management_Project1.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete{id}")]
         public IActionResult DeleteContact(int id)
         {
             _contactUsService.RemoveContact(id);

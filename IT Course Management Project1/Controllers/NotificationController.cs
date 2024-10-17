@@ -16,7 +16,7 @@ namespace IT_Course_Management_Project1.Controllers
             _notificationService = notificationService;
         }
 
-        [HttpPost]
+        [HttpPost ("CreateNotification")]
         public async Task<IActionResult> CreateNotification([FromBody] Notification notification)
         {
             if (notification == null || string.IsNullOrEmpty(notification.Message) || string.IsNullOrEmpty(notification.StudentNIC))
@@ -29,7 +29,7 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
 
-        [HttpGet("{id}")]
+        [HttpGet("GetById{id}")]
         public async Task<IActionResult> GetNotificationById(int id)
         {
             try
@@ -63,7 +63,7 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete{id}")]
         public async Task<IActionResult> DeleteNotification(int id)
         {
             try
@@ -78,7 +78,7 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
 
-        [HttpPut("{id}")]
+        [HttpPut("Update{id}")]
         public async Task<IActionResult> UpdateNotification(int id, [FromBody] Notification notification)
         {
             try

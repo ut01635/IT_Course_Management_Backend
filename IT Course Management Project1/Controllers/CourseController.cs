@@ -21,7 +21,7 @@ namespace IT_Course_Management_Project1.Controllers
             _courseService = courseService;
         }
 
-        [HttpPost]
+        [HttpPost ("Create-Course")]
         public async Task<IActionResult> AddCourse([FromBody] CourseRequestDTO courseDto)
         {
             if (courseDto == null)
@@ -65,7 +65,7 @@ namespace IT_Course_Management_Project1.Controllers
             return Ok(courses);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("GetById{id}")]
         public async Task<IActionResult> GetCourseById(int id)
         {
             var course = await _courseService.GetCourseByIdAsync(id);
@@ -76,7 +76,7 @@ namespace IT_Course_Management_Project1.Controllers
             return Ok(course);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("Update{id}")]
         public async Task<IActionResult> UpdateCourse(int id, [FromBody] Course course)
         {
             // Check if course is null or id does not match
@@ -107,7 +107,7 @@ namespace IT_Course_Management_Project1.Controllers
 
 
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete{id}")]
         public async Task<IActionResult> DeleteCourse(int id)
         {
             var result = await _courseService.DeleteCourseAsync(id);

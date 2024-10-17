@@ -244,55 +244,55 @@ namespace IT_Course_Management_Project1.Database
                     using (SqlCommand command = new SqlCommand(insertDataQuery, connection))
                     {
                         // Parameters for Students
-                        command.Parameters.AddWithValue("@Nic1", "1234567890123");
-                        command.Parameters.AddWithValue("@FullName1", "John Doe");
-                        command.Parameters.AddWithValue("@Email1", "john.doe@example.com");
-                        command.Parameters.AddWithValue("@Phone1", "123-456-7890");
-                        command.Parameters.AddWithValue("@Password1", "hashed_password1"); // Replace with hashed password
-                        command.Parameters.AddWithValue("@RegistrationFee1", 500);
+                        command.Parameters.AddWithValue("@Nic1", "200206601718");
+                        command.Parameters.AddWithValue("@FullName1", "Imthath");
+                        command.Parameters.AddWithValue("@Email1", "ut01635tic@gmail.com");
+                        command.Parameters.AddWithValue("@Phone1", "0768210306");
+                        command.Parameters.AddWithValue("@Password1", "123456789"); // Replace with hashed password
+                        command.Parameters.AddWithValue("@RegistrationFee1", 1500);
                         command.Parameters.AddWithValue("@CourseEnrollId1", 1);
                       
 
-                        command.Parameters.AddWithValue("@Nic2", "9876543210987");
-                        command.Parameters.AddWithValue("@FullName2", "Jane Smith");
-                        command.Parameters.AddWithValue("@Email2", "jane.smith@example.com");
-                        command.Parameters.AddWithValue("@Phone2", "098-765-4321");
-                        command.Parameters.AddWithValue("@Password2", "hashed_password2"); // Replace with hashed password
-                        command.Parameters.AddWithValue("@RegistrationFee2", 300);
+                        command.Parameters.AddWithValue("@Nic2", "200312345678");
+                        command.Parameters.AddWithValue("@FullName2", "Piragash");
+                        command.Parameters.AddWithValue("@Email2", "Piragash@gmail.com");
+                        command.Parameters.AddWithValue("@Phone2", "0766931772");
+                        command.Parameters.AddWithValue("@Password2", "123456789"); // Replace with hashed password
+                        command.Parameters.AddWithValue("@RegistrationFee2", 1500);
                         command.Parameters.AddWithValue("@CourseEnrollId2", DBNull.Value); // NULL
                        
 
                         // Parameters for Courses
-                        command.Parameters.AddWithValue("@CourseName1", "Introduction to Programming");
+                        command.Parameters.AddWithValue("@CourseName1", "Java");
                         command.Parameters.AddWithValue("@Level1", "Beginner");
-                        command.Parameters.AddWithValue("@Duration1", "3 months");
-                        command.Parameters.AddWithValue("@Fees1", 250);
+                        command.Parameters.AddWithValue("@Duration1", "2");
+                        command.Parameters.AddWithValue("@Fees1", 10000);
                         command.Parameters.AddWithValue("@ImagePathCourse1", @"C:\Images\course1.jpg");
 
-                        command.Parameters.AddWithValue("@CourseName2", "Advanced Database Management");
+                        command.Parameters.AddWithValue("@CourseName2", "C#");
                         command.Parameters.AddWithValue("@Level2", "Advanced");
-                        command.Parameters.AddWithValue("@Duration2", "6 months");
-                        command.Parameters.AddWithValue("@Fees2", 400);
+                        command.Parameters.AddWithValue("@Duration2", "6");
+                        command.Parameters.AddWithValue("@Fees2", 42000);
                         command.Parameters.AddWithValue("@ImagePathCourse2", @"C:\Images\course2.jpg");
 
                         // Parameters for first notification
                         command.Parameters.AddWithValue("@Message1", "Welcome to the Institute Management System!");
-                        command.Parameters.AddWithValue("@NICNO1", "1234567890123");
+                        command.Parameters.AddWithValue("@NICNO1", "200206601718");
                         command.Parameters.AddWithValue("@Date1", DateTime.Now);
 
                         // Parameters for second notification
                         command.Parameters.AddWithValue("@Message2", "Your registration is successful.");
-                        command.Parameters.AddWithValue("@NICNO2", "9876543210987");
+                        command.Parameters.AddWithValue("@NICNO2", "200312345678");
                         command.Parameters.AddWithValue("@Date2", DateTime.Now);
 
                         // Parameters for Enrollment
-                        command.Parameters.AddWithValue("@EnrollmentNIC1", "1234567890123");
+                        command.Parameters.AddWithValue("@EnrollmentNIC1", "200206601718");
                         command.Parameters.AddWithValue("@EnrollmentCourseId1", 1);
                         command.Parameters.AddWithValue("@EnrollmentDate1", DateTime.Now);
                         command.Parameters.AddWithValue("@PaymentPlan1", "Full Payment");
                         command.Parameters.AddWithValue("@Status1", "Enrolled");
 
-                        command.Parameters.AddWithValue("@EnrollmentNIC2", "9876543210987");
+                        command.Parameters.AddWithValue("@EnrollmentNIC2", "200312345678");
                         command.Parameters.AddWithValue("@EnrollmentCourseId2", 2);
                         command.Parameters.AddWithValue("@EnrollmentDate2", DateTime.Now);
                         command.Parameters.AddWithValue("@PaymentPlan2", "Installment");
@@ -300,21 +300,21 @@ namespace IT_Course_Management_Project1.Database
 
                         // Parameters for Payment
                         command.Parameters.AddWithValue("@PaymentEnrollmentID1", 1);
-                        command.Parameters.AddWithValue("@PaymentNic1", "123456789V"); // Sample NIC
+                        command.Parameters.AddWithValue("@PaymentNic1", "200206601718"); // Sample NIC
                         command.Parameters.AddWithValue("@PaymentDate1", DateTime.Now);
-                        command.Parameters.AddWithValue("@PaymentAmount1", 250);
+                        command.Parameters.AddWithValue("@PaymentAmount1", 10000);
 
                         command.Parameters.AddWithValue("@PaymentEnrollmentID2", 2);
-                        command.Parameters.AddWithValue("@PaymentNic2", "987654321V"); // Sample NIC
+                        command.Parameters.AddWithValue("@PaymentNic2", "200312345678"); // Sample NIC
                         command.Parameters.AddWithValue("@PaymentDate2", DateTime.Now);
-                        command.Parameters.AddWithValue("@PaymentAmount2", 200);
+                        command.Parameters.AddWithValue("@PaymentAmount2", 7000);
 
                         // Parameters for Admin
-                        command.Parameters.AddWithValue("@AdminNIC1", "admin1");
-                        command.Parameters.AddWithValue("@AdminPassword1", "admin_pass1");
+                        command.Parameters.AddWithValue("@AdminNIC1", "200206601718");
+                        command.Parameters.AddWithValue("@AdminPassword1", "admin123");
 
-                        command.Parameters.AddWithValue("@AdminNIC2", "admin2");
-                        command.Parameters.AddWithValue("@AdminPassword2", "admin_pass2");
+                        command.Parameters.AddWithValue("@AdminNIC2", "200312345678");
+                        command.Parameters.AddWithValue("@AdminPassword2", "admin123");
 
                         // Parameters for ContactUs
                         command.Parameters.AddWithValue("@ContactName1", "Alice Johnson");

@@ -13,9 +13,6 @@ namespace IT_Course_Management_Project1.Entity
 
         public DateTime PaymentDate { get; set; }
         public decimal Amount { get; set; }
-
-        // Navigation property to related Enrollment
-        public Enrollment Enrollment { get; set; }
     }
 
 }

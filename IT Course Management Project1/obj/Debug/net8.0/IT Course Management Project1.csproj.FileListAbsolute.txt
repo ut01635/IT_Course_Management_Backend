@@ -498,3 +498,9 @@ C:\Users\UT03211\Desktop\IT_Course_Management_Backend\IT Course Management Proje
 C:\Users\UT03211\Desktop\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.pdb
 C:\Users\UT03211\Desktop\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.genruntimeconfig.cache
 C:\Users\UT03211\Desktop\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\ref\IT Course Management Project1.dll
+D:\project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
