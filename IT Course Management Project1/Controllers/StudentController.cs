@@ -1,4 +1,5 @@
 ﻿using IT_Course_Management_Project1.DTOs.RequestDtos;
+using IT_Course_Management_Project1.Entity;
 using IT_Course_Management_Project1.IServices;
 using IT_Course_Management_Project1.Services;
 using Microsoft.AspNetCore.Http;
@@ -17,59 +18,63 @@ namespace IT_Course_Management_Project1.Controllers
             _studentService = studentService;
         }
 
-        // POST: api/student
-        [HttpPost]
-        public async Task<IActionResult> CreateStudent(StudentRequestDto studentRequest)
+        [HttpGet ("Get-All-Students")]
+        public async Task<ActionResult<IEnumerable<Student>>> GetAllStudents()
         {
-            if (studentRequest == null)
-                return BadRequest("Invalid student data.");
-            else
-            {
-                try
-                {
-                    var data = await _studentService.AddStudent(studentRequest);
-                    return Ok(data);
-                }
-                catch (Exception ex)
-                {
-                    return BadRequest(ex.Message); 
-                }
-            }
-            
-        }
-
-        // GET: api/student/{id}
-        [HttpGet("Get Student by NIC")]
-        public async Task<IActionResult> GetStudentByNIC(string NIC)
-        {
-            var student = await _studentService.GetStudentByNIC(NIC);
-            return student != null ? Ok(student) : NotFound();
-        }
-
-        // GET: api/student
-        [HttpGet]
-        public async Task<IActionResult> GetAllStudents()
-        {
-            var students = await _studentService.GetAllStudents();
+            var students = await _studentService.GetAllStudentsAsync();
             return Ok(students);
         }
-        // PUT: api/student/{id}
-        [HttpPut("edit student")]
-        public async Task<IActionResult> UpdateStudent(string NIC, StudentRequestDto studentRequest)
-        {
-            if (studentRequest == null || NIC != studentRequest.NIC)
-                return BadRequest("Invalid student data.");
 
-            await _studentService.UpdateStudent(NIC, studentRequest);
+        [HttpGet("Get-StudentByNIC{nic}")]
+        public async Task<ActionResult<Student>> GetStudentByNic(string nic)
+        {
+            var student = await _studentService.GetStudentByNicAsync(nic);
+            if (student == null) return NotFound();
+            return Ok(student);
+        }
+
+        [HttpPost("Add-Student")]
+        public async Task<ActionResult<Student>> AddStudent([FromBody] Student student)
+        {
+            var addedStudent = await _studentService.AddStudentAsync(student);
+            return CreatedAtAction(nameof(GetStudentByNic), new { nic = addedStudent.Nic }, addedStudent);
+        }
+
+        [HttpPut("Update-Student/{nic}")]
+        public async Task<ActionResult> UpdateStudent(string nic, [FromBody] Student student)
+        {
+            var result = await _studentService.UpdateStudentAsync(nic, student);
+            if (result == null) return NotFound();
             return NoContent();
         }
 
-        // DELETE: api/student/{id}
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteStudent(string NIC)
+
+        [HttpDelete("Delete-student/{nic}")]
+        public async Task<ActionResult> DeleteStudent(string nic)
         {
-            await _studentService.DeleteStudents(NIC);
+            var result = await _studentService.DeleteStudentAsync(nic);
+            if (result == 0) return NotFound();
             return NoContent();
+        }
+
+
+        [HttpPut("update-password/{nic}")]
+        public async Task<IActionResult> UpdatePassword(string nic, [FromBody] string newPassword)
+        {
+            if (string.IsNullOrEmpty(newPassword))
+            {
+                return BadRequest("New password is required.");
+            }
+
+            try
+            {
+                await _studentService.PasswordUpdateAsync(nic, newPassword);
+                return NoContent(); // Successfully updated
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"An error occurred while updating the password: {ex.Message}");
+            }
         }
     }
 

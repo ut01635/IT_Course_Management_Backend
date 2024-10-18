@@ -6,99 +6,63 @@ namespace IT_Course_Management_Project1.Repositories
 {
     public class StudentRepository : IStudentRepository
     {
-        private readonly string _connectionstring;
+        private readonly string _connectionString;
 
-        public StudentRepository(string connectionstring)
+        public StudentRepository(string connectionString)
         {
-            _connectionstring = connectionstring;
+            _connectionString = connectionString;
         }
 
-
-        //Add Students
-        //public async Task<Student> AddBike(Student student)
-        //{
-        //    using (var connection = new SqlConnection(_connectionstring))
-        //    {
-        //        var command = new SqlCommand(
-        //            "INSERT INTO Students (Id, NIC, FirstName, LastName, DOB, Age, PhoneNumber, Email, PassWord) VALUES (@id, @nic, @firstName, @lastName, @dob, @age, @phoneNumber, @email, @passWord)", connection);
-
-        //        command.Parameters.AddWithValue("@id", Guid.NewGuid()); // Assuming you're generating a new GUID
-        //        command.Parameters.AddWithValue("@nic", student.NIC);
-        //        command.Parameters.AddWithValue("@firstName", student.FirstName);
-        //        command.Parameters.AddWithValue("@lastName", student.LastName);
-        //        command.Parameters.AddWithValue("@dob", student.DOB);
-        //        command.Parameters.AddWithValue("@age", student.Age);
-        //        command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
-        //        command.Parameters.AddWithValue("@email", student.Email);
-        //        command.Parameters.AddWithValue("@passWord", student.PassWord);
-
-
-        //        await connection.OpenAsync();
-        //        await command.ExecuteNonQueryAsync();
-        //    }
-
-        //    return student;
-        //}
-
-        public async Task<Student> GetStudentByNIC(string NIC)
+        // Add a new student
+        public async Task<Student> AddStudentAsync(Student student)
         {
-            Student student = null;
-            string query = "SELECT * FROM Student WHERE NIC = @NIC";
-
-            using (var connection = new SqlConnection(_connectionstring))
+            using (var connection = new SqlConnection(_connectionString))
             {
                 await connection.OpenAsync();
-                using (var command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@NIC", NIC);
-                    using (var reader = await command.ExecuteReaderAsync())
-                    {
-                        if (await reader.ReadAsync())
-                        {
-                            student = new Student
-                            {
-                                Id = (Guid)reader["Id"],
-                                NIC = (string)reader["NIC"],
-                                FirstName = (string)reader["FirstName"],
-                                LastName = (string)reader["LastName"],
-                                DOB = (DateTime)reader["DOB"],
-                                Age = (int)reader["Age"],
-                                PhoneNumber = reader["PhoneNumber"] as string,
-                                Email = reader["Email"] as string,
-                                PassWord = reader["PassWord"] as string
-                            };
-                        }
-                    }
-                }
+                var command = connection.CreateCommand();
+                command.CommandText = @"
+                INSERT INTO Students (Nic, FullName, Email, Phone, Password, RegistrationFee)
+                VALUES (@nic, @fullName, @email, @phone, @password, @registrationFee);
+            ";
+
+                command.Parameters.AddWithValue("@nic", student.Nic);
+                command.Parameters.AddWithValue("@fullName", student.FullName);
+                command.Parameters.AddWithValue("@email", student.Email);
+                command.Parameters.AddWithValue("@phone", student.Phone);
+                command.Parameters.AddWithValue("@password", student.Password);
+                command.Parameters.AddWithValue("@registrationFee", student.RegistrationFee);
+                
+
+                await command.ExecuteNonQueryAsync();
             }
 
             return student;
         }
 
-        public async Task<List<Student>> GetAllStudents()
+        // Get all students
+        public async Task<IEnumerable<Student>> GetAllStudentsAsync()
         {
             var students = new List<Student>();
-            string query = "SELECT * FROM Student";
 
-            using (var connection = new SqlConnection(_connectionstring))
+            using (var connection = new SqlConnection(_connectionString))
             {
                 await connection.OpenAsync();
-                using (var command = new SqlCommand(query, connection))
+                var command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM Students";
+
                 using (var reader = await command.ExecuteReaderAsync())
                 {
                     while (await reader.ReadAsync())
                     {
                         students.Add(new Student
                         {
-                            Id = (Guid)reader["Id"],
-                            NIC = (string)reader["NIC"],
-                            FirstName = (string)reader["FirstName"],
-                            LastName = (string)reader["LastName"],
-                            DOB = (DateTime)reader["DOB"],
-                            Age = (int)reader["Age"],
-                            PhoneNumber = reader["PhoneNumber"] as string,
-                            Email = reader["Email"] as string,
-                            PassWord = reader["PassWord"] as string
+                            Nic = reader.GetString(reader.GetOrdinal("Nic")),
+                            FullName = reader.GetString(reader.GetOrdinal("FullName")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            Phone = reader.GetString(reader.GetOrdinal("Phone")),
+                            Password = reader.GetString(reader.GetOrdinal("Password")),
+                            RegistrationFee = reader.GetInt32(reader.GetOrdinal("RegistrationFee")),
+                           
                         });
                     }
                 }
@@ -107,72 +71,104 @@ namespace IT_Course_Management_Project1.Repositories
             return students;
         }
 
-        public async Task<Student> AddStudent(Student student)
+        // Get student by NIC
+        public async Task<Student> GetStudentByNicAsync(string nic)
         {
-            var query = "INSERT INTO Student (Id, NIC, FirstName, LastName, DOB, Age, PhoneNumber, Email, PassWord) VALUES (@id, @nic, @firstName, @lastName, @dob, @age, @phoneNumber, @email, @passWord)";
+            Student student = null;
 
-            using (var connection = new SqlConnection(_connectionstring))
-            {
-
-                var command = new SqlCommand(query, connection);
-       
-                    command.Parameters.AddWithValue("@id", Guid.NewGuid());
-                    command.Parameters.AddWithValue("@nic", student.NIC);
-                    command.Parameters.AddWithValue("@firstName", student.FirstName);
-                    command.Parameters.AddWithValue("@lastName", student.LastName);
-                    command.Parameters.AddWithValue("@dob", student.DOB);
-                    command.Parameters.AddWithValue("@age", student.Age);
-                    command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
-                    command.Parameters.AddWithValue("@email", student.Email);
-                    command.Parameters.AddWithValue("@passWord", student.PassWord);
-
-                    await connection.OpenAsync();
-                    await command.ExecuteNonQueryAsync();
-                
-            }
-            return student;
-        }
-
-        public async Task<Student> UpdateStudent(Student student)
-        {
-            string query = "UPDATE Student SET NIC = @nic, FirstName = @firstName, LastName = @lastName, DOB = @dob, Age = @age, PhoneNumber = @phoneNumber, Email = @email, PassWord = @passWord WHERE Id = @id";
-
-            using (var connection = new SqlConnection(_connectionstring))
+            using (var connection = new SqlConnection(_connectionString))
             {
                 await connection.OpenAsync();
-                using (var command = new SqlCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@id", student.Id);
-                    command.Parameters.AddWithValue("@nic", student.NIC);
-                    command.Parameters.AddWithValue("@firstName", student.FirstName);
-                    command.Parameters.AddWithValue("@lastName", student.LastName);
-                    command.Parameters.AddWithValue("@dob", student.DOB);
-                    command.Parameters.AddWithValue("@age", student.Age);
-                    command.Parameters.AddWithValue("@phoneNumber", student.PhoneNumber);
-                    command.Parameters.AddWithValue("@email", student.Email);
-                    command.Parameters.AddWithValue("@passWord", student.PassWord); // Ensure this is hashed before storage
+                var command = connection.CreateCommand();
+                command.CommandText = "SELECT * FROM Students WHERE Nic = @nic";
+                command.Parameters.AddWithValue("@nic", nic);
 
-                    await command.ExecuteNonQueryAsync();
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    if (await reader.ReadAsync())
+                    {
+                        student = new Student
+                        {
+                            Nic = reader.GetString(reader.GetOrdinal("Nic")),
+                            FullName = reader.GetString(reader.GetOrdinal("FullName")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            Phone = reader.GetString(reader.GetOrdinal("Phone")),
+                            Password = reader.GetString(reader.GetOrdinal("Password")),
+                            RegistrationFee = reader.GetInt32(reader.GetOrdinal("RegistrationFee")),
+                           
+                        };
+                    }
                 }
             }
 
             return student;
         }
 
-        public async Task DeleteStudents(string NIC)
+        // Update  Student
+        public async Task<Student> UpdateStudentAsync(string nic, Student student)
         {
-            string query = "DELETE FROM Student WHERE NIC = @NIC";
-
-            using (var connection = new SqlConnection(_connectionstring))
+            using (var connection = new SqlConnection(_connectionString))
             {
                 await connection.OpenAsync();
-                using (var command = new SqlCommand(query, connection))
+                var command = connection.CreateCommand();
+                command.CommandText = @"
+        UPDATE Students 
+        SET FullName = @fullName, 
+            Email = @email, 
+            Phone = @phone 
+        WHERE Nic = @nic";
+
+                command.Parameters.AddWithValue("@nic", nic);
+                command.Parameters.AddWithValue("@fullName", student.FullName);
+                command.Parameters.AddWithValue("@email", student.Email);
+                command.Parameters.AddWithValue("@phone", student.Phone);
+
+                await command.ExecuteNonQueryAsync();
+                return student;
+            }
+        }
+
+
+
+        // Delete student by NIC
+        public async Task<int> DeleteStudentAsync(string nic)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var command = connection.CreateCommand();
+                command.CommandText = "DELETE FROM Students WHERE Nic = @nic";
+                command.Parameters.AddWithValue("@nic", nic);
+
+                return await command.ExecuteNonQueryAsync();
+            }
+        }
+
+
+        public async Task PasswordUpdateAsync(string nic, string newPassword)
+        {
+            var student = await GetStudentByNicAsync(nic);
+            if (student == null)
+            {
+                throw new Exception("Student Not Found!");
+            }
+
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+                var command = connection.CreateCommand();
+                command.CommandText = "UPDATE Students SET Password = @newPassword WHERE Nic = @nic";
+                command.Parameters.AddWithValue("@newPassword", newPassword);
+                command.Parameters.AddWithValue("@nic", nic);
+
+                var rowsAffected = await command.ExecuteNonQueryAsync();
+                if (rowsAffected == 0)
                 {
-                    command.Parameters.AddWithValue("@NIC", NIC);
-                    await command.ExecuteNonQueryAsync();
+                    throw new Exception("Failed to update password. No rows affected.");
                 }
             }
         }
+        
 
     }
 }

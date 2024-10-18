@@ -15,117 +15,35 @@ namespace IT_Course_Management_Project1.Services
             _studentRepository = studentRepository;
         }
 
-        public async Task<StudentResponseDto> GetStudentByNIC(string NIC)
+        public async Task<Student> AddStudentAsync(Student student)
         {
-            var student = await _studentRepository.GetStudentByNIC(NIC);
-            return student == null ? null : new StudentResponseDto
-            {
-                Id = student.Id,
-                NIC = student.NIC,
-                FirstName = student.FirstName,
-                LastName = student.LastName,
-                DOB = student.DOB,
-                Age = student.Age,
-                PhoneNumber = student.PhoneNumber,
-                Email = student.Email
-            };
+            return await _studentRepository.AddStudentAsync(student);
         }
 
-        public async Task<List<StudentResponseDto>> GetAllStudents()
+        public async Task<IEnumerable<Student>> GetAllStudentsAsync()
         {
-            var students = await _studentRepository.GetAllStudents();
-            var studentDtos = new List<StudentResponseDto>();
-
-            foreach (var student in students)
-            {
-                studentDtos.Add(new StudentResponseDto
-                {
-                    Id = student.Id,
-                    NIC = student.NIC,
-                    FirstName = student.FirstName,
-                    LastName = student.LastName,
-                    DOB = student.DOB,
-                    Age = student.Age,
-                    PhoneNumber = student.PhoneNumber,
-                    Email = student.Email
-                });
-            }
-
-            return studentDtos;
+            return await _studentRepository.GetAllStudentsAsync();
         }
 
-        public async Task<StudentResponseDto> AddStudent(StudentRequestDto studentRequest)
+        public async Task<Student> GetStudentByNicAsync(string nic)
         {
-            // Check if the NIC already exists
-            var existingStudent = await _studentRepository.GetStudentByNIC(studentRequest.NIC);
-            if (existingStudent != null)
-            {
-                throw new InvalidOperationException("A student with this NIC already exists.");
-            }
-
-            // Create a new student object
-            var student = new Student
-            {
-                NIC = studentRequest.NIC,
-                FirstName = studentRequest.FirstName,
-                LastName = studentRequest.LastName,
-                DOB = studentRequest.DOB,
-                Age = CalculateAge(studentRequest.DOB),
-                PhoneNumber = studentRequest.PhoneNumber,
-                Email = studentRequest.Email,
-                PassWord = studentRequest.PassWord // Hash the password before saving
-            };
-
-            // Add the student to the repository
-            await _studentRepository.AddStudent(student);
-
-            // Create and return the response DTO
-            var response = new StudentResponseDto
-            {
-                Id = student.Id,
-                NIC = student.NIC,
-                FirstName = student.FirstName,
-                LastName = student.LastName,
-                DOB = student.DOB,
-                Age = student.Age,
-                PhoneNumber = student.PhoneNumber,
-                Email = student.Email,
-            };
-            return response;
+            return await _studentRepository.GetStudentByNicAsync(nic);
         }
 
-        private int CalculateAge(DateTime dob)
+        public async Task<Student> UpdateStudentAsync(string nic, Student student)
         {
-            var today = DateTime.Today;
-            int age = today.Year - dob.Year;
-
-            // Adjust age if the birthday hasn't occurred yet this year
-            if (dob.Date > today.AddYears(-age)) age--;
-
-            return age;
+            return await _studentRepository.UpdateStudentAsync(nic, student);
         }
 
 
-        public async Task UpdateStudent(string NIC, StudentRequestDto studentRequest)
+        public async Task<int> DeleteStudentAsync(string nic)
         {
-            var student = new Student
-            {
-                NIC = studentRequest.NIC,
-                FirstName = studentRequest.FirstName,
-                LastName = studentRequest.LastName,
-                DOB = studentRequest.DOB,
-                Age = CalculateAge(studentRequest.DOB),
-                PhoneNumber = studentRequest.PhoneNumber,
-                Email = studentRequest.Email,
-                PassWord = studentRequest.PassWord // Hash before saving
-            };
-
-            await _studentRepository.UpdateStudent(student);
+            return await _studentRepository.DeleteStudentAsync(nic);
         }
 
-        public async Task DeleteStudents(string NIC)
+        public async Task PasswordUpdateAsync(string nic, string newPassword)
         {
-            await _studentRepository.DeleteStudents(NIC);
+            await _studentRepository.PasswordUpdateAsync(nic, newPassword);
         }
     }
 }

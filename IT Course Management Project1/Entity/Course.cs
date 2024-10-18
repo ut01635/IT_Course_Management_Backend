@@ -2,20 +2,17 @@
 {
     public class Course
     {
-        public Guid CourseId { get;set; }
+        public int Id { get; set; }
         public string CourseName { get; set; }
+        public string Level { get; set; }
 
-        public string CourseCategory { get; set; }
+        public string Duration { get; set; }  
+        public decimal Fees { get; set; }
 
-        public int Duration {  get; set; }
+        public string ImagePath { get; set; }
 
-        public string CourseFee {  get; set; }
 
-        public string Lecturer { get; set; }
 
-        public string Description { get; set; }
-
-        public string CoursePhoto { get; set; }
 
 
     }

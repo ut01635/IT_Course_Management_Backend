@@ -4,10 +4,12 @@ namespace IT_Course_Management_Project1.IRepository
 {
     public interface IStudentRepository
     {
-        Task<Student> GetStudentByNIC(string NIC);
-        Task<List<Student>> GetAllStudents();
-        Task<Student> AddStudent(Student student);
-        Task<Student> UpdateStudent(Student student);
-        Task DeleteStudents(string NIC);
+        Task<Student> AddStudentAsync(Student student);
+        Task<IEnumerable<Student>> GetAllStudentsAsync();
+        Task<Student> GetStudentByNicAsync(string nic);
+        Task<Student> UpdateStudentAsync(string nic, Student student);
+        Task<int> DeleteStudentAsync(string nic);
+
+        Task PasswordUpdateAsync(string nic, string newPassword);
     }
 }
