@@ -20,7 +20,7 @@ namespace IT_Course_Management_Project1
             DatabaseInitializer database = new DatabaseInitializer();
             database.InitializeDatabase();
             database.CreateTable();
-            database.InserSampleData();
+            database.InsertSampleData();
 
             // Add services to the container.
 
