@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wTcHZ8nSIDmujyzxl788hjEw7s5Y6etEyCR5sZ3fwNHyWweRuuP6gG/zpfjBESXwxJygu53yQRqyfEEqh0AYpQ==",
+  "dgSpecHash": "J0eftq6fAo8=",
   "success": true,
-  "projectFilePath": "X:\\Piragash (Actitivity)\\Milestone Project\\Mile 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
+  "projectFilePath": "X:\\Piragash (Actitivity)\\Milestone Projects\\Milestone 2\\IT_Course_Management_Backend\\IT Course Management Project1\\IT Course Management Project1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UT01228\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\UT01228\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
