@@ -41,9 +41,9 @@ namespace IT_Course_Management_Project1.Controllers
         }
 
         [HttpPut("Update-Student/{nic}")]
-        public async Task<ActionResult> UpdateStudent(string nic, [FromBody] Student student)
+        public async Task<ActionResult> UpdateStudent(string nic, [FromBody] StudentUpdateRequestDTO studentDto)
         {
-            var result = await _studentService.UpdateStudentAsync(nic, student);
+            var result = await _studentService.UpdateStudentAsync(nic, studentDto);
             if (result == null) return NotFound();
             return NoContent();
         }

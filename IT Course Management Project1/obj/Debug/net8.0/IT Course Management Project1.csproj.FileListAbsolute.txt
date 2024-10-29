@@ -579,3 +579,78 @@ X:\Piragash (Actitivity)\Milestone Projects\Milestone 2\IT_Course_Management_Bac
 X:\Piragash (Actitivity)\Milestone Projects\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Cours.39FDB7FF.Up2Date
 X:\Piragash (Actitivity)\Milestone Projects\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.genruntimeconfig.cache
 X:\Piragash (Actitivity)\Milestone Projects\Milestone 2\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\ref\IT Course Management Project1.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\appsettings.Development.json
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\appsettings.json
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\IT Course Management Project1.exe
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\IT Course Management Project1.deps.json
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\IT Course Management Project1.runtimeconfig.json
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\IT Course Management Project1.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\IT Course Management Project1.pdb
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Azure.Core.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Azure.Identity.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\System.ClientModel.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\System.Memory.Data.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.csproj.AssemblyReference.cache
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.AssemblyInfoInputs.cache
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.AssemblyInfo.cs
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.csproj.CoreCompileInputs.cache
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.MvcApplicationPartsAssemblyInfo.cs
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.MvcApplicationPartsAssemblyInfo.cache
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.sourcelink.json
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\staticwebassets.build.json
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\staticwebassets.development.json
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\staticwebassets\msbuild.IT Course Management Project1.Microsoft.AspNetCore.StaticWebAssets.props
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\staticwebassets\msbuild.build.IT Course Management Project1.props
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.IT Course Management Project1.props
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.IT Course Management Project1.props
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\staticwebassets.pack.json
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\scopedcss\bundle\IT Course Management Project1.styles.css
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Cours.39FDB7FF.Up2Date
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\refint\IT Course Management Project1.dll
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.pdb
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\IT Course Management Project1.genruntimeconfig.cache
+D:\project\MS2 Project\IT_Course_Management_Backend\IT Course Management Project1\obj\Debug\net8.0\ref\IT Course Management Project1.dll
