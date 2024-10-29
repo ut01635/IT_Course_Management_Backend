@@ -40,10 +40,10 @@ namespace IT_Course_Management_Project1.Database
                 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name = 'Students' AND xtype = 'U')
                 BEGIN
                     CREATE TABLE Students (
-                        NIC NVARCHAR(15) PRIMARY KEY,
-                        FullName NVARCHAR(25) NOT NULL,
-                        Email NVARCHAR(25) NOT NULL,
-                        Phone NVARCHAR(15) NOT NULL,
+                        NIC NVARCHAR(50) PRIMARY KEY,
+                        FullName NVARCHAR(200) NOT NULL,
+                        Email NVARCHAR(100) NOT NULL,
+                        Phone NVARCHAR(50) NOT NULL,
                         Password NVARCHAR(50) NOT NULL,
                         RegistrationFee INT NOT NULL,
                         CourseEnrollId INT NULL
@@ -68,7 +68,7 @@ namespace IT_Course_Management_Project1.Database
                 BEGIN
                     CREATE TABLE Enrollment (
                         ID INT PRIMARY KEY IDENTITY(1,1),
-                        NIC NVARCHAR(15) NOT NULL,
+                        NIC NVARCHAR(50) NOT NULL,
                         CourseId INT NOT NULL,
                         EnrollmentDate DATETIME NOT NULL,
                         PaymentPlan NVARCHAR(100) NOT NULL,
@@ -86,7 +86,7 @@ namespace IT_Course_Management_Project1.Database
                         EnrollmentID INT NOT NULL,
                         PaymentDate DATETIME NOT NULL,
                         Amount DECIMAL(18, 2) NOT NULL,
-                        NIC NVARCHAR(15) NOT NULL,
+                        NIC NVARCHAR(50) NOT NULL,
                         FOREIGN KEY (EnrollmentID) REFERENCES Enrollment(ID)
                     );
                 END;
@@ -97,7 +97,7 @@ namespace IT_Course_Management_Project1.Database
                     CREATE TABLE Notification (
                         Id INT PRIMARY KEY IDENTITY(1,1),
                         Message NVARCHAR(MAX) NOT NULL,
-                        NIC NVARCHAR(15) NOT NULL,
+                        NIC NVARCHAR(50) NOT NULL,
                         Date DATETIME NOT NULL,
                         FOREIGN KEY (NIC) REFERENCES Students(NIC)
                     );
@@ -119,7 +119,7 @@ namespace IT_Course_Management_Project1.Database
                 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name = 'Admin' AND xtype = 'U')
                 BEGIN
                     CREATE TABLE Admin (
-                        NIC NVARCHAR(15) PRIMARY KEY,
+                        NIC NVARCHAR(50) PRIMARY KEY,
                         Password NVARCHAR(50) NOT NULL
                     );
                 END;
@@ -157,13 +157,7 @@ namespace IT_Course_Management_Project1.Database
             SELECT @Nic2, @FullName2, @Email2, @Phone2, @Password2, @RegistrationFee2, @CourseEnrollId2
             WHERE NOT EXISTS (SELECT 1 FROM Students WHERE NIC = @Nic2);
 
-            INSERT INTO Students (NIC, FullName, Email, Phone, Password, RegistrationFee, CourseEnrollId)
-            SELECT @Nic3, @FullName3, @Email3, @Phone3, @Password3, @RegistrationFee3, @CourseEnrollId3
-            WHERE NOT EXISTS (SELECT 1 FROM Students WHERE NIC = @Nic3);
-
-            INSERT INTO Students (NIC, FullName, Email, Phone, Password, RegistrationFee, CourseEnrollId)
-            SELECT @Nic4, @FullName4, @Email4, @Phone4, @Password4, @RegistrationFee4, @CourseEnrollId4
-            WHERE NOT EXISTS (SELECT 1 FROM Students WHERE NIC = @Nic4);
+            
 
           
 
@@ -237,14 +231,6 @@ namespace IT_Course_Management_Project1.Database
             SELECT @EnrollmentNIC2, @EnrollmentCourseId2, @EnrollmentDate2, @PaymentPlan2, @Status2
             WHERE NOT EXISTS (SELECT 1 FROM Enrollment WHERE NIC = @EnrollmentNIC2 AND CourseId = @EnrollmentCourseId2);
 
-            INSERT INTO Enrollment (NIC, CourseId, EnrollmentDate, PaymentPlan, Status)
-            SELECT @EnrollmentNIC3, @EnrollmentCourseId3, @EnrollmentDate3, @PaymentPlan3, @Status3
-            WHERE NOT EXISTS (SELECT 1 FROM Enrollment WHERE NIC = @EnrollmentNIC3 AND CourseId = @EnrollmentCourseId3);
-
-            INSERT INTO Enrollment (NIC, CourseId, EnrollmentDate, PaymentPlan, Status)
-            SELECT @EnrollmentNIC4, @EnrollmentCourseId4, @EnrollmentDate4, @PaymentPlan4, @Status4
-            WHERE NOT EXISTS (SELECT 1 FROM Enrollment WHERE NIC = @EnrollmentNIC4 AND CourseId = @EnrollmentCourseId4);
-
             -- Insert sample data into Payment table if it does not exist
             INSERT INTO Payment (EnrollmentID, NIC, PaymentDate, Amount)
             SELECT @PaymentEnrollmentID1, @PaymentNic1, @PaymentDate1, @PaymentAmount1
@@ -253,14 +239,6 @@ namespace IT_Course_Management_Project1.Database
             INSERT INTO Payment (EnrollmentID, NIC, PaymentDate, Amount)
             SELECT @PaymentEnrollmentID2, @PaymentNic2, @PaymentDate2, @PaymentAmount2
             WHERE NOT EXISTS (SELECT 1 FROM Payment WHERE EnrollmentID = @PaymentEnrollmentID2);
-
-            INSERT INTO Payment (EnrollmentID, NIC, PaymentDate, Amount)
-            SELECT @PaymentEnrollmentID3, @PaymentNic3, @PaymentDate3, @PaymentAmount3
-            WHERE NOT EXISTS (SELECT 1 FROM Payment WHERE EnrollmentID = @PaymentEnrollmentID3);
-
-            INSERT INTO Payment (EnrollmentID, NIC, PaymentDate, Amount)
-            SELECT @PaymentEnrollmentID4, @PaymentNic4, @PaymentDate4, @PaymentAmount4
-            WHERE NOT EXISTS (SELECT 1 FROM Payment WHERE EnrollmentID = @PaymentEnrollmentID4);
 
             -- Insert sample data into Admin table if it does not exist
             INSERT INTO Admin (NIC, Password)
@@ -274,10 +252,6 @@ namespace IT_Course_Management_Project1.Database
             INSERT INTO Admin (NIC, Password)
             SELECT @AdminNIC3, @AdminPassword3
             WHERE NOT EXISTS (SELECT 1 FROM Admin WHERE NIC = @AdminNIC3);
-
-            INSERT INTO Admin (NIC, Password)
-            SELECT @AdminNIC4, @AdminPassword4
-            WHERE NOT EXISTS (SELECT 1 FROM Admin WHERE NIC = @AdminNIC4);
 
             -- Insert sample data into ContactUs table if it does not exist
             INSERT INTO ContactUs (Name, Email, Message, SubmitDate)
@@ -322,22 +296,6 @@ namespace IT_Course_Management_Project1.Database
                         command.Parameters.AddWithValue("@Password2", "piragash");
                         command.Parameters.AddWithValue("@RegistrationFee2", 1500);
                         command.Parameters.AddWithValue("@CourseEnrollId2", 2);
-
-                        command.Parameters.AddWithValue("@Nic3", "200305110150");
-                        command.Parameters.AddWithValue("@FullName3", "Nitharsan");
-                        command.Parameters.AddWithValue("@Email3", "nitharsann061@gmail.com");
-                        command.Parameters.AddWithValue("@Phone3", "0742775560");
-                        command.Parameters.AddWithValue("@Password3", "nitharsan");
-                        command.Parameters.AddWithValue("@RegistrationFee3", 1500);
-                        command.Parameters.AddWithValue("@CourseEnrollId3", 3);
-
-                        command.Parameters.AddWithValue("@Nic4", "200417002813");
-                        command.Parameters.AddWithValue("@FullName4", "Safeek");
-                        command.Parameters.AddWithValue("@Email4", "ut03211tic@gmail.com");
-                        command.Parameters.AddWithValue("@Phone4", "0743773745");
-                        command.Parameters.AddWithValue("@Password4", "safeek");
-                        command.Parameters.AddWithValue("@RegistrationFee4", 1500);
-                        command.Parameters.AddWithValue("@CourseEnrollId4", 4);
 
 
 
@@ -414,11 +372,11 @@ namespace IT_Course_Management_Project1.Database
 
                        
                         command.Parameters.AddWithValue("@Message3", "Course schedule will be sent shortly.");
-                        command.Parameters.AddWithValue("@NICNO3", "200305110150");
+                        command.Parameters.AddWithValue("@NICNO3", "200206601718");
                         command.Parameters.AddWithValue("@Date3", DateTime.Now);
 
                         command.Parameters.AddWithValue("@Message4", "Please complete your payment to secure your enrollment.");
-                        command.Parameters.AddWithValue("@NICNO4", "200417002813");
+                        command.Parameters.AddWithValue("@NICNO4", "200431400979");
                         command.Parameters.AddWithValue("@Date4", DateTime.Now);
 
 
@@ -436,19 +394,6 @@ namespace IT_Course_Management_Project1.Database
                         command.Parameters.AddWithValue("@PaymentPlan2", "Installment");
                         command.Parameters.AddWithValue("@Status2", "Pending");
 
-                        
-                        command.Parameters.AddWithValue("@EnrollmentNIC3", "200305110150");
-                        command.Parameters.AddWithValue("@EnrollmentCourseId3", 3);
-                        command.Parameters.AddWithValue("@EnrollmentDate3", DateTime.Now);
-                        command.Parameters.AddWithValue("@PaymentPlan3", "Full Payment");
-                        command.Parameters.AddWithValue("@Status3", "Enrolled");
-
-                        command.Parameters.AddWithValue("@EnrollmentNIC4", "200417002813");
-                        command.Parameters.AddWithValue("@EnrollmentCourseId4", 4);
-                        command.Parameters.AddWithValue("@EnrollmentDate4", DateTime.Now);
-                        command.Parameters.AddWithValue("@PaymentPlan4", "Installment");
-                        command.Parameters.AddWithValue("@Status4", "Pending");
-
                         // Parameters for Payment
                         command.Parameters.AddWithValue("@PaymentEnrollmentID1", 1);
                         command.Parameters.AddWithValue("@PaymentNic1", "200206601718");
@@ -460,18 +405,6 @@ namespace IT_Course_Management_Project1.Database
                         command.Parameters.AddWithValue("@PaymentDate2", DateTime.Now);
                         command.Parameters.AddWithValue("@PaymentAmount2", 7000);
 
-                        command.Parameters.AddWithValue("@PaymentEnrollmentID3", 3);
-                        command.Parameters.AddWithValue("@PaymentNic3", "200305110150");
-                        command.Parameters.AddWithValue("@PaymentDate3", DateTime.Now);
-                        command.Parameters.AddWithValue("@PaymentAmount3", 25000);
-
-                        command.Parameters.AddWithValue("@PaymentEnrollmentID4", 4);
-                        command.Parameters.AddWithValue("@PaymentNic4", "200417002813");
-                        command.Parameters.AddWithValue("@PaymentDate4", DateTime.Now);
-                        command.Parameters.AddWithValue("@PaymentAmount4", 10000);
-
-
-
                         // Parameters for Admin
                         command.Parameters.AddWithValue("@AdminNIC1", "200206601718");
                         command.Parameters.AddWithValue("@AdminPassword1", "admin123");
@@ -479,11 +412,8 @@ namespace IT_Course_Management_Project1.Database
                         command.Parameters.AddWithValue("@AdminNIC2", "200431400979");
                         command.Parameters.AddWithValue("@AdminPassword2", "admin123");
 
-                        command.Parameters.AddWithValue("@AdminNIC3", "200305110150");
+                        command.Parameters.AddWithValue("@AdminNIC3", "200417002813");
                         command.Parameters.AddWithValue("@AdminPassword3", "admin123");
-
-                        command.Parameters.AddWithValue("@AdminNIC4", "200417002813");
-                        command.Parameters.AddWithValue("@AdminPassword4", "admin123");
 
 
                         // Parameters for ContactUs

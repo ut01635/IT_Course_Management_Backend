@@ -21,10 +21,10 @@ namespace IT_Course_Management_Project1.Controllers
             _courseService = courseService;
         }
 
-        [HttpPost ("Create-Course")]
-        public async Task<IActionResult> AddCourse([FromBody] CourseRequestDTO courseDto)
+        [HttpPost("Create-Course")]
+        public async Task<IActionResult> AddCourse([FromBody] Course course)
         {
-            if (courseDto == null)
+            if (course == null)
             {
                 return BadRequest("Course data is required.");
             }
@@ -33,15 +33,6 @@ namespace IT_Course_Management_Project1.Controllers
             {
                 return BadRequest(ModelState);
             }
-
-            var course = new Course
-            {
-                CourseName = courseDto.CourseName,
-                Level = courseDto.Level,
-                Duration = courseDto.Duration,
-                Fees = courseDto.Fees,
-                ImagePath = courseDto.ImagePath
-            };
 
             try
             {
@@ -57,6 +48,7 @@ namespace IT_Course_Management_Project1.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, $"An error occurred while adding the course: {ex.Message}");
             }
         }
+
 
         [HttpGet("GetAllCourses")]
         public async Task<IActionResult> GetAllCourses()

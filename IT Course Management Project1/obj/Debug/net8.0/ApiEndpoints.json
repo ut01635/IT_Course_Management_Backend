@@ -252,8 +252,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "courseDto",
-        "Type": "IT_Course_Management_Project1.DTOs.RequestDtos.CourseRequestDTO",
+        "Name": "course",
+        "Type": "IT_Course_Management_Project1.Entity.Course",
         "IsRequired": true
       }
     ],
@@ -762,8 +762,8 @@
         "IsRequired": true
       },
       {
-        "Name": "student",
-        "Type": "IT_Course_Management_Project1.Entity.Student",
+        "Name": "studentDto",
+        "Type": "IT_Course_Management_Project1.DTOs.RequestDtos.StudentUpdateRequestDTO",
         "IsRequired": true
       }
     ],
