@@ -9,7 +9,7 @@
         public string Duration { get; set; }  
         public decimal Fees { get; set; }
 
-        public string ImagePath { get; set; }
+        public string? ImagePath { get; set; }
 
 
 
