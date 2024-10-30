@@ -307,56 +307,56 @@ namespace IT_Course_Management_Project1.Database
                         command.Parameters.AddWithValue("@ImagePathCourse1", @"C:\Images\course1.jpg");
 
                         command.Parameters.AddWithValue("@CourseName2", "C#");
-                        command.Parameters.AddWithValue("@Level2", "Advanced");
+                        command.Parameters.AddWithValue("@Level2", "Intermediate");
                         command.Parameters.AddWithValue("@Duration2", "6 months");
                         command.Parameters.AddWithValue("@Fees2", 42000);
                         command.Parameters.AddWithValue("@ImagePathCourse2", @"C:\Images\course2.jpg");
 
                         command.Parameters.AddWithValue("@CourseName3", "Python");
                         command.Parameters.AddWithValue("@Level3", "Intermediate");
-                        command.Parameters.AddWithValue("@Duration3", "4 months");
+                        command.Parameters.AddWithValue("@Duration3", "6 months");
                         command.Parameters.AddWithValue("@Fees3", 25000);
                         command.Parameters.AddWithValue("@ImagePathCourse3", @"C:\Images\course3.jpg");
 
                         command.Parameters.AddWithValue("@CourseName4", "JavaScript");
                         command.Parameters.AddWithValue("@Level4", "Beginner");
-                        command.Parameters.AddWithValue("@Duration4", "3 months");
+                        command.Parameters.AddWithValue("@Duration4", "2 months");
                         command.Parameters.AddWithValue("@Fees4", 20000);
                         command.Parameters.AddWithValue("@ImagePathCourse4", @"C:\Images\course4.jpg");
 
                         command.Parameters.AddWithValue("@CourseName5", "Ruby");
                         command.Parameters.AddWithValue("@Level5", "Beginner");
-                        command.Parameters.AddWithValue("@Duration5", "3 months");
+                        command.Parameters.AddWithValue("@Duration5", "2 months");
                         command.Parameters.AddWithValue("@Fees5", 15000);
                         command.Parameters.AddWithValue("@ImagePathCourse5", @"C:\Images\course5.jpg");
 
                         command.Parameters.AddWithValue("@CourseName6", "Swift");
                         command.Parameters.AddWithValue("@Level6", "Intermediate");
-                        command.Parameters.AddWithValue("@Duration6", "4 months");
+                        command.Parameters.AddWithValue("@Duration6", "6 months");
                         command.Parameters.AddWithValue("@Fees6", 30000);
                         command.Parameters.AddWithValue("@ImagePathCourse6", @"C:\Images\course6.jpg");
 
                         command.Parameters.AddWithValue("@CourseName7", "PHP");
-                        command.Parameters.AddWithValue("@Level7", "Advanced");
-                        command.Parameters.AddWithValue("@Duration7", "5 months");
+                        command.Parameters.AddWithValue("@Level7", "Intermediate");
+                        command.Parameters.AddWithValue("@Duration7", "6 months");
                         command.Parameters.AddWithValue("@Fees7", 35000);
                         command.Parameters.AddWithValue("@ImagePathCourse7", @"C:\Images\course7.jpg");
 
                         command.Parameters.AddWithValue("@CourseName8", "Go");
                         command.Parameters.AddWithValue("@Level8", "Beginner");
-                        command.Parameters.AddWithValue("@Duration8", "3 months");
+                        command.Parameters.AddWithValue("@Duration8", "2 months");
                         command.Parameters.AddWithValue("@Fees8", 20000);
                         command.Parameters.AddWithValue("@ImagePathCourse8", @"C:\Images\course8.jpg");
 
                         command.Parameters.AddWithValue("@CourseName9", "Kotlin");
                         command.Parameters.AddWithValue("@Level9", "Intermediate");
-                        command.Parameters.AddWithValue("@Duration9", "4 months");
+                        command.Parameters.AddWithValue("@Duration9", "6 months");
                         command.Parameters.AddWithValue("@Fees9", 28000);
                         command.Parameters.AddWithValue("@ImagePathCourse9", @"C:\Images\course9.jpg");
 
                         command.Parameters.AddWithValue("@CourseName10", "TypeScript");
-                        command.Parameters.AddWithValue("@Level10", "Advanced");
-                        command.Parameters.AddWithValue("@Duration10", "5 months");
+                        command.Parameters.AddWithValue("@Level10", "Intermediate");
+                        command.Parameters.AddWithValue("@Duration10", "6 months");
                         command.Parameters.AddWithValue("@Fees10", 32000);
                         command.Parameters.AddWithValue("@ImagePathCourse10", @"C:\Images\course10.jpg");
 

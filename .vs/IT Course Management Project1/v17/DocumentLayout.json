@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "X:\\Piragash (Actitivity)\\Milestone Projects\\Milestone 2\\IT_Course_Management_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone projects\\milestone 2\\it_course_management_backend\\it course management project1\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone projects\\milestone 2\\it_course_management_backend\\it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\database\\databaseinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone projects\\milestone 2\\it_course_management_backend\\it course management project1\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|solutionrelative:it course management project1\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A74CC4B-F7DE-4113-94AF-841883F55995}|IT Course Management Project1\\IT Course Management Project1.csproj|x:\\piragash (actitivity)\\milestone projects\\milestone 2\\it_course_management_backend\\it course management project1\\dtos\\requestdtos\\courserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,11 +129,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Course.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Projects\\Milestone 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Entity\\Course.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Entity\\Course.cs",
@@ -194,13 +194,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DatabaseInitializer.cs",
               "DocumentMoniker": "X:\\Piragash (Actitivity)\\Milestone Projects\\Milestone 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
               "RelativeDocumentMoniker": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
               "ToolTip": "X:\\Piragash (Actitivity)\\Milestone Projects\\Milestone 2\\IT_Course_Management_Backend\\IT Course Management Project1\\Database\\DatabaseInitializer.cs",
               "RelativeToolTip": "IT Course Management Project1\\Database\\DatabaseInitializer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAFsBAAAAAAAAAAAIwGYBAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T11:42:14.032Z",
               "EditorCaption": ""
